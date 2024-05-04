@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSizeText;
+    letter-spacing:$letterSpacing;
+    min-height: 100vh;
+    padding: 0;
+
+    img {
+        width: 20px;
+    }
+}
+
+.body {
+    display: grid;
+    gap: 0;
+    grid-template:
+    "header"
+    "main" 
+    "footer"/
+    100%
+    ;
+
+    .header {
+        grid-area: header;
+        background-color: #919496;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: #85e7ff;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: #000000;
+    }
+}

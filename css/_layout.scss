@@ -1,0 +1,737 @@
+// Estilos del header
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eceff1;
+    padding: 20px 40px 20px 40px;
+    @include transition;
+
+    @include tablets {
+        padding: 20px 24px 20px 40px;
+        @include transition;
+    }
+}
+// Estilos del Header - logo principal
+.logo__container {
+    @include flexAlingCenter;
+    padding: 0 0 0 10px;
+
+    .logo__adidas {
+        width: 3.125vw;
+        @include transition;
+
+        @include laptops {
+            @include transition;
+            width: 4.125vw;
+        }
+    }
+
+}
+// Estilos del Header - Categorias Centrales
+.product__categories {
+    @include flexAlingCenter;
+    position: relative;
+    right: -7.396vw;
+    @include transition;
+
+    @include laptops {
+        right: -2.396vw;
+        @include transition;
+    }
+
+    @include tablets {
+        right: -1.396vw;
+        @include transition;
+    }
+
+    .categories {
+        @include flexAlingCenter;
+        @include aReset;
+        justify-content: center;
+        padding: 0 10px;
+        font-weight: 600;
+        font-size: 0.729vw;
+        @include transition;
+
+        @include laptops {
+            font-size: 0.950vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 1.200vw;
+            @include transition;
+        }
+    }
+
+    .categories--alternative {
+        font-weight: 400;
+    }
+}
+// Estilos del Header - Menu del Usuario
+.user__home {
+    @include flexAlingCenter;
+
+    // Estilos del input search
+    .input__container {
+        @include flexAlingCenter;
+        
+    }
+
+    .input_search {
+        border: none;
+        border: solid thin #eceff1;
+        padding: 0 35px 0 10px;
+        background-color: #eceff1;
+        height: 1.667vw;
+        width: 11.979vw;
+        max-width: 11.979vw;
+        font-family: $fontFamily;
+        @include transition;
+
+        @include laptops {
+            height: 1.867vw;
+            width: 12.179vw;
+            max-width: 12.179vw;
+            @include transition;
+        }
+
+        @include tablets {
+            height: 2.667vw;
+            width: 55.979vw;
+            max-width: 15.979vw;
+            @include transition;
+        }
+    }
+
+    .input__img {
+        @include flexAlingCenter;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        z-index: 10;
+        transform: translateX(1012%);
+        width: 1.03vw;
+        @include transition;
+
+        @include laptops {
+            width: 1.20vw;
+            transform: translateX(871%);
+            @include transition;
+        }
+
+        @include tablets {
+            width: 1.20vw;
+            transform: translateX(1136%);
+            @include transition;
+        }
+
+        @include phones {
+            width: 1.80vw;
+            transform: translateX(725%);
+            @include transition;
+            display: none;
+        }
+    }
+// Estilos del Header - Home Icons
+    .user__home__icons {
+        @include flexAlingCenter;
+        justify-content: center;
+        position: relative;
+        width: 2.5vw;
+        cursor: pointer;
+        @include transition;
+
+        @include laptops {
+            width: 2.8vw;
+            @include transition;
+        }
+
+        @include phones {
+            width: 3.8vw;
+        }
+    }
+
+    .user__home__icons--alt {
+        @include laptops {
+            width: 2.8vw;
+            @include transition;
+        }
+
+        @include phones {
+            width: 3.8vw;
+        }
+    }
+}
+// Estilos del Header - Ajustes de tamaño de los iconos
+.user__img, 
+.favorites__img {
+    width: 1.25vw;
+    @include transition;
+
+    @include laptops {
+        width: 1.40vw;
+        @include transition;
+    }
+
+    @include phones {
+        width: 2.3vw;
+        @include transition;
+    }
+}
+
+.cart__img {
+    width: 1.354vw;
+    @include transition;
+
+    @include laptops {
+        width: 1.45vw;
+        @include transition;
+    }
+
+    @include phones {
+        width: 2.3vw;
+        @include transition;
+    }
+}
+
+
+// Estilos del Main 
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    position: relative;
+    
+}
+// Estilos del Main - Actual page
+.actual__page {
+    @include flexAlingCenter;
+    padding: 25px 2.125vw;
+    
+
+    .actual__page__back__btn {
+        @include flexAlingCenter;
+        background-color: #ffffff00;
+        padding: 0 10px 0 0;
+        border: none;
+        font-weight: 600;
+        letter-spacing: $letterSpacing;
+        font-size: $fontSizeText;
+        text-decoration: underline;
+        cursor: pointer;
+        @include transition;
+
+        @include laptops {
+            font-size: 1.033vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 1.233vw;
+            @include transition;
+        }
+
+        .back__icon__img {
+            width: 1.563vw;
+            cursor: pointer;
+            padding-right: 10px;
+            @include transition;
+
+            @include laptops {
+                width: 2.063vw;
+                @include transition;
+            }
+
+            @include tablets {
+                width: 2.363vw;
+                @include transition;
+            }
+        }
+    }
+}
+
+.actual__page__item {
+    @include flexAlingCenter;  
+    padding: 0 2px 0 5px;
+
+    .actual__page__link {
+        background-color: #ffffff00;
+        border: none;
+        font-weight: 400;
+        letter-spacing: $letterSpacing; 
+        color: #000; 
+        @include transition;
+
+        @include laptops {
+            font-size: 1.033vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 1.233vw;
+            @include transition;
+        }
+    }
+
+    .separator {
+        padding-right: 5px;
+        @include transition;
+
+        @include laptops {
+            font-size: 1.033vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 1.233vw;
+            @include transition;
+        }
+    }
+
+    .actual__page__link--alternative {
+        text-decoration: none;
+    }
+    
+}
+
+// Estilos del Main - Page title
+.page__title {
+    @include flexAlingCenter;
+    padding: 0 2.188vw 25px 2.188vw;
+    @include transition;
+
+    @include laptops {
+        padding: 0 2.188vw 0px 2.188vw;
+        @include transition;
+    }
+
+    .page__title__text {
+        font-size: 1.667vw;
+        font-style: italic;
+        font-weight: 500;
+        @include transition;
+
+        @include laptops {
+            font-size: 1.967vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 2.267vw;
+            @include transition;
+        }
+    }
+
+    .page__title__dot__separator {
+        position: relative;
+        transform: translateY(22%);
+        display: inline-flex;
+        align-items: center;
+        width: 2.083vw;
+        @include transition;
+
+        @include tablets {
+            width: 2.383vw;
+            @include transition;
+        }
+    }
+
+    .page__title__count__container {
+        transform: translateY(31%);
+        padding-left: 10px;
+        color: #767677;
+        font-size: 0.667vw;
+        @include transition;
+
+        @include tablets {
+            font-size: 0.967vw;
+            @include transition;
+        }
+    }
+}
+
+// Estilos del Main - Carrousel
+.carrousel {
+    @include flexAlingCenter;
+    justify-content: space-between;
+    margin: 10px 2.125vw 25px 2.125vw;
+    @include transition;
+
+    @include laptops {
+        margin: 10px 2.125vw 10px 2.125vw;
+        @include transition;
+    }
+
+    .carrousel__slider {
+        @include flexAlingCenter;
+        justify-content: space-between;
+    }
+
+    .carrousel__item__wrapper {
+        margin: 0 14px 0 0;
+    }
+
+    .nav__item {
+        @include flexAlingCenter;
+        font-size: 0.75vw;
+        color: #767677;
+        text-decoration: none;
+        @include transition;
+
+        @include laptops {
+            font-size: 0.85vw;
+            @include transition;
+        }
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    .carrousel__filter__btn {
+        @include flexAlingCenter;
+        border: solid 1px #000;
+        border-radius: 0;
+        cursor: pointer;
+        justify-content: flex-start;
+        padding: 6px 9px;
+        position: relative;
+        text-align: left;
+        width: auto;
+        background-color: #ffffff;
+        @include transition;
+
+        @include laptops {
+            padding: 3px 6px;
+            @include transition;
+        }
+
+        @include tablets {
+            position: absolute;
+            right: 2.1vw;
+            top: 9.1vw;
+            @include transition;
+        }
+    }
+
+    .carrousel__filter__P {
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: $fontFamily;
+        padding: 0 5px 0 0;
+        font-weight: 600;
+        font-size: 0.70vw;
+        @include transition;
+
+        @include tablets {
+            font-size: 1vw;
+            @include transition;
+        }
+    }
+
+    .carrousel__filter__img {
+        width: 1.563vw;
+        @include transition;
+
+        @include laptops {
+            width: 1.563vw;
+            @include transition;
+        }
+
+        @include tablets {
+            width: 1.963vw;
+            @include transition;
+        }
+    }
+}
+
+
+// Estilos del Main - Products
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 25.00%);
+    padding: 10px 2.125vw;
+    @include transition;
+
+    @include phones {
+        grid-template-columns: repeat(3, 33.4%);
+        @include transition;
+    }
+
+    .products__item {
+        width: 100%;
+        padding: 1px;
+        margin-left: 0;
+
+        .product__display {
+            position: relative;
+            
+        }
+
+        .products__img {
+            width: 100%;
+        }
+    }
+}
+
+.products__add__favorites__container {
+    position: absolute;
+    
+
+    .products__add__favorites__btn {
+        position: absolute;
+        right: -23.4vw;
+        bottom: 22.6vw;
+        cursor: pointer;
+        border: none;
+        background-color: #ffffff00;
+        @include transition;
+
+        @include laptops {
+            right: -23vw;
+            bottom: 22.1vw;
+            @include transition;
+        }
+
+        @include tablets {
+            right: -23vw;
+            bottom: 21.5vw;
+            @include transition;
+        }
+
+        @include phones {
+            right: -30vw;
+            bottom: 28.5vw;
+            @include transition;
+        }
+    }
+
+    .products__add__favorites__img {
+        width: 15px;
+    }
+}
+
+.products__price {
+    position: relative;
+    text-decoration: none;
+    
+    .products__price__container {
+        position: absolute;
+    }
+    
+    .products__price__text {
+        color: #000;
+        font-size: 0.833vw;
+        position: relative;
+        right: -0.3vw;
+        bottom: 1.8vw;
+        cursor: pointer;
+        background-color: #ffffff;
+        padding: 3px 5px;
+        width: 3.333vw;
+        @include transition;
+
+        @include laptops {
+            bottom: 2vw;
+            width: 3.633vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 1vw;
+            bottom: 2.30vw;
+            width: 4.30vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.300vw;
+            bottom: 2.90vw;
+            width: 5.5vw;
+            @include transition;
+        }
+    }
+}
+
+.products__description__container {
+    padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    @include transition;
+
+    @include laptops {
+        font-size: 0.963vw;
+        @include transition;
+    }
+
+    @include tablets {
+        font-size: 1.100vw;
+        @include transition;
+    }
+
+    @include phones {
+        font-size: 1.400vw;
+        @include transition;
+    }
+
+    .products__description__title {
+        color: #000;
+    }
+
+    .products__description__category {
+        color: #767677;
+    }
+
+    .products__description__label {
+        color: #000;
+        font-size: 0.667vw;
+        @include transition;
+
+        @include laptops {
+            font-size: 0.810vw;
+            @include transition;
+        }
+
+        @include tablets {
+            font-size: 0.95vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.200vw;
+            @include transition;
+        }
+    }
+}
+
+.products__description {
+    text-decoration: none;
+}
+
+// Estilos del Main - Pagination
+.pagination {
+    padding: 10px 2.188vw 20px 2.188vw;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.pagination__indicator {
+    @include flexAlingCenter;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 0.883vw;
+    @include transition;
+
+    @include laptops {
+        font-size: 1.050vw;
+        @include transition;
+    }
+
+    @include tablets {
+        font-size: 1.250vw;
+        @include transition;
+    }
+
+    @include phones {
+        font-size: 1.650vw;
+        @include transition;
+    }
+
+    .pagination__indicator__dropdown{
+        @include flexAlingCenter;
+        
+        .pagination__indicator__dropdown__text {
+            padding-right: 10px;
+        }
+
+        .pagination__indicator__dropdown__img{
+            width: 0.729vw;
+            @include transition;
+
+            @include laptops {
+                width: 1vw;
+                @include transition;
+            }
+
+            @include tablets {
+                width: 1.10vw;
+                @include transition;
+            }
+
+            @include phones {
+                width: 1.30vw;
+                @include transition;
+            }
+        }
+    }
+}
+
+.pagination__control__next {
+    font-weight: 500;
+    font-size: 0.833vw;
+    color: #000;
+
+    @include laptops {
+        font-size: 1.050vw;
+        @include transition;
+    }
+
+    @include tablets {
+        font-size: 1.250vw;
+        @include transition;
+    }
+
+    @include phones {
+        font-size: 1.650vw;
+        @include transition;
+    }
+}
+
+//Estilos del Footer
+
+.footer {
+    border-top: 1px solid #767677;
+    background-color: #282c31;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.legal__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1010px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+
+    .legal__menu__item {
+        display: inline-block;
+        width: auto;
+        border-right: 1px solid #d3d7da;
+        margin: 15px 0;
+        padding: 0 15px;
+
+        .legal__menu__item__a {
+            text-decoration: none;
+            color: #d3d7da;
+            font-size: 0.66rem;
+        }
+    }
+}
+
+.colophon {
+    max-width: 1010px;
+    align-self: center;
+    padding: 20px 15px 0px 15px;
+
+    .colophon__text {
+        color: #d3d7da;
+        text-align: center;
+        font-size: 0.66rem;
+    }
+}

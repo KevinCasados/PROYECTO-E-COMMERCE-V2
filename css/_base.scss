@@ -1,0 +1,38 @@
+$fontFamily: "Poppins",Verdana,Tahoma, sans-serif;
+$fontSizeText: 0.833vw;
+$letterSpacing: 0.03rem;
+
+@mixin flexAlingCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin aReset {
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin borderBox {
+    box-sizing: border-box;
+}
+
+@mixin marginAuto {
+    margin: 0 auto;
+}
+
+@mixin transition {
+    transition: all ease .2s;
+}
+
+
+@mixin laptops {
+    @media screen and (max-width: 102.938rem) {@content};
+}
+
+@mixin tablets {
+    @media screen and (max-width: 71rem) {@content};
+}
+
+@mixin phones {
+    @media screen and (max-width: 57.5rem) {@content};
+}

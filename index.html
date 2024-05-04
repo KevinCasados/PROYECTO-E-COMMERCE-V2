@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Proyecto E-Commerse V2</title>
+</head>
+<body class="body">
+    <!--Inicio de la seccion Header-->
+    <header class="header">
+        <article class="logo__container">
+            <img class="logo__adidas" src="img/adidas-logo-black.svg" alt="Logo Adidas">
+        </article>
+        <!--Categorias de las diferentes paginas-->
+        <section class="product__categories">
+            <a class="categories" href="#">CALZADO</a>
+            <a class="categories" href="#">MUJER</a>
+            <a class="categories" href="#">HOMBRE</a>
+            <a class="categories" href="#">NIÑOS</a>
+            <a class="categories categories--alternative" href="#">DEPORTE</a>
+            <a class="categories categories--alternative" href="#">MUNDO ADIDAS</a>
+            <a class="categories" href="#">OUTLET</a>
+        </section>
+        <!--navegacion del usuario-->
+        <section class="user__home">
+            <article class="input__container">
+                <input class="input_search" type="text" placeholder="Buscar">
+                <img class="input__img" src="img/search-icon-black.svg" alt="Logo Search">
+            </article>
+
+            <a class="user__home__icons user__home__icons--alt" href="#"><img class="user__img" src="img/user-icon.svg" alt="User Logo"></a>
+            <a class="user__home__icons" href="#"><img class="favorites__img" src="img/favorites-icon.svg" alt="Favortites Logo"></a>
+            <a class="user__home__icons" href="#"><img class="cart__img" src="img/cart-icon.svg" alt="Cart Logo"></a>
+        </section>
+    </header>
+
+    <!--Inicio de la seccion Main-->
+    <main class="main">
+        <!--Seccion del indice de la pagina actual-->
+        <section class="actual__page">
+            <!--Boton de regresar a la pagina anterior-->
+            <article class="actual__page__item__btn">
+                <button type="button" class="actual__page__back__btn" aria-label="Back"><img class="back__icon__img" src="img/back-icon.svg" alt="Back Icon">ATRÁS</button>
+            </article>
+            <!--indice de las paginas-->
+            <article class="actual__page__item">
+                <a class="actual__page__link" href="#">Inicio</a>
+            </article>
+
+            <article class="actual__page__item">
+                <article class="separator">/</article>
+                <a class="actual__page__link" href="#">Productos</a>
+            </article>
+            <article class="actual__page__item">
+                <article class="separator">/</article>
+                <a class="actual__page__link" href="#">Novedades</a>
+            </article>
+            <article class="actual__page__item">
+                <article class="separator">/</article>
+                <a class="actual__page__link actual__page__link--alternative" href="#">Todo</a>
+            </article>
+        </section>
+        <!--Titulo de la pagina actual-->
+        <section class="page__title">
+            <article class="page__title__container">
+                <h1 class="page__title__heading">
+                    <span class="page__title__text">PRODUCTOS</span>
+                    <img class="page__title__dot__separator" src="img/dot-icon.svg" alt="Dot Icon">
+                    <span class="page__title__text">NOVEDADES</span>
+                    <img class="page__title__dot__separator" src="img/dot-icon.svg" alt="Dot Icon">
+                    <span class="page__title__text">TODO</span>
+                </h1>
+            </article>
+
+            <article class="page__title__count__container">
+                <p>[122]</p>
+            </article>
+        </section>
+        <!--Carusel de categorias-->
+        <section class="carrousel">
+
+            <article class="carrousel__slider">
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Hasta 50% OFF Ropa</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Ver Toda la Ropa</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Novedades</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Playeras</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Mallas</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Chamarras</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Sudaderas y Hoodies</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Pants</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Jerseys</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Pants con Sudadera</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Shorts</a>
+                </div>
+
+                <div class="carrousel__item__wrapper">
+                    <a class="nav__item" href="#">Originals</a>
+                </div>
+            </article>
+
+            <button class="carrousel__filter__btn">
+                <p class="carrousel__filter__P">Filtrar Y Ordenar</p>
+                <img class="carrousel__filter__img" src="img/filter-icon.svg" alt="Filtrar Icon">
+            </button>
+        </section>
+
+        <!--Inicio de la seccion de productos-->
+        <section class="products"> 
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/jersey-local-seleccion-nacional-de-mexico-24.jpg" alt="Jersey Mexico">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,899</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Jersey Local Seleccion Nacional de México 24</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/jersey-visitante-seleccion-nacional-de-mexico-24.jpg" alt="Jersey Mexico Visitante">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,899</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Jersey Visitante Seleccion Nacional de México 24</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/adidas-x-farm-rio-premium-pants.avif" alt="Adidas X Farm">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,199</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Adidas x Farm Rio Premium Pants</p>
+                        <p class="products__description__category">Mujer Sportswear</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/camisa-con-botones-shmoofolio-unisex.avif" alt="Camisa con botones shmoofolio unisex">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,699</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Camisa con Botones Shmoofolio (Unisex)</p>
+                        <p class="products__description__category">Originals</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-marathon-3-franjas.jpg" alt="Cahamarra marathon 3 franjas">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,629</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Marathon 3 Franjas</p>
+                        <p class="products__description__category">Hombre Runnig</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-termica-con-gorro-terrex-multi-hybrid.avif" alt="Cahamarra termica con gorro terrex">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,399</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Termica con Gorro Terrex Multi Hybrid</p>
+                        <p class="products__description__category">Hombre TERREX</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-terrex-multi-light-cierre-frontal-felpa.jpg" alt="Cahamarra Terrex Multi-Light">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Terrex Multi Light Cierre Frontal Felpa</p>
+                        <p class="products__description__category">Hombre TERREX</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-tiro-24-competition-all-weather-seleccion-nacional-de-mexico.jpg" alt="Chamarra Tiro 24 compertition">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,399</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Tiro 24 Seleccion Méxicana</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/gorra-arkd3.jpg" alt="Gorra ARKD3">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$499</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Gorra ARKD3</p>
+                        <p class="products__description__category">Niño Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/guantes-de-arquero-predator-league.jpg" alt="Guantes de arquero Predator">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,199</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Guantes de Arquero Predator League</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/mallas-train-essentials-aop-flower-tie-dye-corte-alto.jpg" alt="Malla Train Essentials">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$899</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Mallas Train Essentials Aop Flower Tie Dye Corte Alto</p>
+                        <p class="products__description__category">Mujer Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/playera-de-entrenamiento-designed-for-training.jpg" alt="Playera de entrenamiento Designed for Training">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$699</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Playera de Entrenamiento Designed for Training</p>
+                        <p class="products__description__category">Hombre Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/playera-minimalista-aeroready-train-essentials-cuello-en-v.jpg" alt="Playera Aeroready Train Essentials">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$349</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Playera Minimalista Aeroready Train Essentials Cuello en V<</p>
+                        <p class="products__description__category">Mujer Training</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-free-hiker-2.0-gore-tex.jpg" alt="Tenis Free Hiker 2.0">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$5,499</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Free Hiker 2.0 Gore Tex</p>
+                        <p class="products__description__category">TERREX</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-harden-volume-8.jpg" alt="Tenis Harden Volume 8">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$3,899</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Harden Volume 8</p>
+                        <p class="products__description__category">Basketball</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-ultraboost-1.0.jpg" alt="Tenis Ultraboost 1.0">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$3,999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Ultraboost 1.0</p>
+                        <p class="products__description__category">Sportswear</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/vestido-maxi-adicolor-classics-3-franjas.jpg" alt="Vestido Maxi-Adicolor Calssics 3 Franjas">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Vestido Maxi Adicolor Classics 3 Franjas</p>
+                        <p class="products__description__category">Mujer Originals</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/vestido-premium-adidas-x-farm-rio.avif" alt="Vestido Premium Adidas X Farm Rip">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,599</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Vestido Premium Adidas x Farm-rio</p>
+                        <p class="products__description__category">Mujer Sportswear</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-de-senderismo-terrex-xploric-rain.rdy.avif" alt="Chamarra de Senderismo Terrex Xploric">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$6,499</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra de Senderismo Terrex Xploric Rain.rdy</p>
+                        <p class="products__description__category">Hombre TERREX</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-marathon-warm-up.avif" alt="Chamarra Marathon Warm Up">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,000</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Marathon Warm Up</p>
+                        <p class="products__description__category">Hombre Running</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>           
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/calzado-de-futbol-predator-club-multiterreno-con-ajuste-tipo-calcetin.avif" alt="Calzado de Futbol Predator Club Multiterreno">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,499</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Calzado de Futbol Predator Club Multiterreno</p>
+                        <p class="products__description__category">Calzado Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/calzado-de-futbol-predator-elite-sin-cordones-terreno-firme.avif" alt="Calzado de Futbol Predator Elite">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$6,999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Calzado de Futbol Predator Elite sin Cordones</p>
+                        <p class="products__description__category">Calzado Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/calzado-de-futbol-predator-league-sin-cordones-terreno-firme.avif" alt="Calzado de Futbol Predator League sin Cordones">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,399</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Calzado de Futbol Predator League sin Cordones</p>
+                        <p class="products__description__category">Calzado Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/calzado-x-crazyfast.3-terreno-firme.avif" alt="Calzado X Crazy Fast">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,299</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Calzado x CrazyFast.3 Terreno Firme</p>
+                        <p class="products__description__category">Calzado Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-deportiva-beckenbauer.avif" alt="Chamarra deportiva Beckenbauer">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,799</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Deportiva Beckenbauer</p>
+                        <p class="products__description__category">Mujer Originals</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/chamarra-deportiva-classics-sst.avif" alt="Chamarra Deportiva Classics">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,699</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Chamarra Deportiva Classics SST</p>
+                        <p class="products__description__category">Mujer Originals</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/jersey-fourth-real-madrid-23-24.avif" alt="Jersey Fourth Real Madrid 23/24">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$3,999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Jersey Fourth Real Madrid 23/24</p>
+                        <p class="products__description__category">Hombre Y-3</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/jersey-visitante-real-madrid-23-24.avif" alt="Jersey Visitante Real Madrid 23/24">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,799</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Jersey Visitante Real Madrid 23/24</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/otr-e-3s-hoodie.avif" alt="Otre-E-3s Hoodie">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$349.00</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">OTR E 3S Hoodie</p>
+                        <p class="products__description__category">Mujer Running</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/pants-de-entrenamiento-tiro-24-competition-seleccion-nacional-de-mexico.avif" alt="Pants de Entrenamiento Tiro 24 Seleccion Mexicana">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,499</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Pants Tiro 24 Seleccion Méxicana</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/pants-terrex-xploric.avif" alt="Pants Terrex Xploric">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,399</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Pants Terrex Xploric</p>
+                        <p class="products__description__category">Hombre TERREX</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/shorts-tercer-uniforme-real-madrid-22-23.avif" alt="Shorts Tercer Uniforme Real Madrid">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,099</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Shorts Tercer Uniforme Real Madrid 22/23</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/sudadera-basketball-sin-mangas-unisex.avif" alt="Sudadera Basketball sin Mangas Unisex">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,399</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Sudadera Basketball Sin Mangas (Unisex)</p>
+                        <p class="products__description__category">Unisex Basketball</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/sudadera-con-gorro-essentials-logo-holgada.avif" alt="Sudadera con Gorro Essentials Logo Holgada">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,099</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Sudadera con Gorro Essentials Logo Holgada</p>
+                        <p class="products__description__category">Mujer Sportswear</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/sudadera-con-gorro-one-basketball-felpa.avif" alt="Sudadera con Gorro One Basketball Felpa">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,099</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Sudadera con Gorro One Basketball Felpa</p>
+                        <p class="products__description__category">Unisex Basketball</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/sudadera-con-gorro-real-madrid-essentials-trifolio.avif" alt="Sudadera con Gorro Real Madrid Essentials Trifolio">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Sudadera con Gorro Real Madrid Essentials Trifolio</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-de-entrenamiento-amplimove.avif" alt="Tenis de Entrenamiento Amplimove">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,399</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis de Entrenamiento Amplimove</p>
+                        <p class="products__description__category">Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-de-entrenamiento-dropset-adidas-by-stella-mccartney.avif" alt="Tenis Dropset Adidas by Stella McCartney">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$3,999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Dropset Adidas by Stella McCartney</p>
+                        <p class="products__description__category">Mujer Adidas by Stella McCartney</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-dropset-2.avif" alt="Tenis Dropset 2">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,599</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Dropset 2</p>
+                        <p class="products__description__category">Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-everyset.avif" alt="Tenis Everyset">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,699</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Everyset</p>
+                        <p class="products__description__category">Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/tenis-gazelle-real-madrid.avif" alt="Tenis Gazelle Real Madrid">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$2,099</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Tenis Gazelle Real Madrid</p>
+                        <p class="products__description__category">Originals</p>
+                        <p class="products__description__label">nuevo</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/top-deportivo-adidas-tlrd-move-training-soporte-alto.avif" alt="Top Deportivo Adidas TLRD Move Training Soporte Alto">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,299</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Top Deportivo Adidas TLRD Move Training Soporte Alto</p>
+                        <p class="products__description__category">Mujer Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/top-deportivo-adidas-x-farm-rio-soporte-medio.avif" alt="Top Deportivo Adidas x Farm Rio Soporte Medio">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$799</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Top Deportivo Adidas x Farm Rio Soporte Medio</p>
+                        <p class="products__description__category">Mujer Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/top-deportivo-aeroreact-training-soporte-ligero.avif" alt="Top Deportivo Aeroreact Training Soporte Ligero">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$899</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Top Deportivo Aeroreact Training Soporte Ligero</p>
+                        <p class="products__description__category">Mujer Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/top-deportivo-training-powerreact-hyperglam-color-pop-soporte-medio.avif" alt="Top Training Powerreact Soporte Medio">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$899</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Top Training Powerreact Soporte Medio</p>
+                        <p class="products__description__category">Mujer Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/pants-train-essentials-3-stripes.avif" alt="Pants Train Essentials 3-Stripes">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$999</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Pants Train Essentials 3-Stripes</p>
+                        <p class="products__description__category">Hombre Training</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/pants-de-presentacion-tiro-24-competition-seleccion-nacional-de-mexico.avif" alt="Pants de Presentacion Tiro 24 Seleccion Méxicana">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,599</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Pants de Presentacion Tiro 24 Seleccion Méxicana</p>
+                        <p class="products__description__category">Hombre Fútbol</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="products__item">
+                <a class="product__display" href="#">
+                    <img class="products__img" src="img/products/pants-basketball-heather.avif" alt="Pants Basketball Heather">
+                </a>
+                
+                <div class="products__add__favorites__container">
+                    <button class="products__add__favorites__btn">
+                        <img class="products__add__favorites__img" src="img/favorites-icon.svg" alt="Favorites Icon">
+                    </button>
+                </div>
+
+                <a class="products__price" href="#">
+                    <div class="products__price__container">
+                        <p class="products__price__text">$1,784</p>
+                    </div>
+                </a>
+
+                <a class="products__description" href="#">
+                    <div class="products__description__container">
+                        <p class="products__description__title">Pants Basketball Heather</p>
+                        <p class="products__description__category">Unisex Basketball</p>
+                        <p class="products__description__label">envío gratis</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+        <!--Fin de la seccion Productos-->
+
+        <!--Selector de cambio de paginas-->
+        <section class="pagination">
+            <article class="pagination__control"></article>
+            <article class="pagination__indicator">
+                <p class="pagination__indicator__text">Página:</p>
+                <div class="pagination__indicator__dropdown">
+                    <p class="pagination__indicator__dropdown__text">1</p>
+                    <img class="pagination__indicator__dropdown__img" src="img/arrow-down-icon.svg" alt="Arrow Down Icon">
+                </div>
+                <p class="pagination__indicator__text">de 3</p>
+            </article>
+            <article class="pagination__control">
+                <a class="pagination__control__next" href="#">SIGUIENTE</a>
+            </article>
+        </section>
+    </main>
+    <!--Fin de la seccion Main-->
+
+    <!--Inicio de la seccion Footer-->
+    <footer class="footer">
+        <ul class="legal__menu">
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Configuración de cookies</a>
+            </li>
+
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Nuestros Datos</a>
+            </li>
+
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Términos y Condiciones</a>
+            </li>
+
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Uso del Sitio</a>
+            </li>
+            
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Términos y Condiciones Promociones</a>
+            </li>
+
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Privacidad de Videovigilancia</a>
+            </li>
+
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a" href="#">Seleccionar País</a>
+            </li>
+
+            <li class="legal__menu__item">
+                <a class="legal__menu__item__a legal__menu__item__a--variation" href="#">Aviso de Privacidad</a>
+            </li>
+        </ul>
+
+        <article class="colophon">
+            <p class="colophon__text">© 2024 adidas Mexico S.A. de C.V.</p>
+        </article>
+    </footer>
+</body>
+</html>
