@@ -26,7 +26,7 @@ body img {
 }
 .body .main {
   grid-area: main;
-  background-color: #85e7ff;
+  background-color: #ffffff;
 }
 .body .footer {
   grid-area: footer;
@@ -92,6 +92,11 @@ body img {
   font-weight: 600;
   font-size: 0.729vw;
   transition: all ease 0.2s;
+}
+.product__categories .categories:hover {
+  color: #000;
+  border-bottom: 3px solid #000;
+  transition: all ease;
 }
 @media screen and (max-width: 102.938rem) {
   .product__categories .categories {
@@ -271,6 +276,11 @@ body img {
   cursor: pointer;
   transition: all ease 0.2s;
 }
+.actual__page .actual__page__back__btn:hover {
+  color: #ffffff;
+  background-color: #000;
+  text-decoration: none;
+}
 @media screen and (max-width: 102.938rem) {
   .actual__page .actual__page__back__btn {
     font-size: 1.033vw;
@@ -315,6 +325,10 @@ body img {
   color: #000;
   transition: all ease 0.2s;
 }
+.actual__page__item .actual__page__link:hover {
+  color: #ffffff;
+  background-color: #000;
+}
 @media screen and (max-width: 102.938rem) {
   .actual__page__item .actual__page__link {
     font-size: 1.033vw;
@@ -345,6 +359,10 @@ body img {
 }
 .actual__page__item .actual__page__link--alternative {
   text-decoration: none;
+}
+.actual__page__item .actual__page__link--alternative:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .page__title {
@@ -426,6 +444,10 @@ body img {
 .carrousel .carrousel__item__wrapper {
   margin: 0 14px 0 0;
 }
+.carrousel .carrousel__item__wrapper:hover {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
 .carrousel .nav__item {
   display: flex;
   align-items: center;
@@ -433,6 +455,9 @@ body img {
   color: #767677;
   text-decoration: none;
   transition: all ease 0.2s;
+}
+.carrousel .nav__item:hover {
+  color: #000;
 }
 @media screen and (max-width: 102.938rem) {
   .carrousel .nav__item {
@@ -458,6 +483,9 @@ body img {
   width: auto;
   background-color: #ffffff;
   transition: all ease 0.2s;
+}
+.carrousel .carrousel__filter__btn:hover {
+  color: #797b7b;
 }
 @media screen and (max-width: 102.938rem) {
   .carrousel .carrousel__filter__btn {
@@ -522,6 +550,9 @@ body img {
   width: 100%;
   padding: 1px;
   margin-left: 0;
+}
+.products .products__item:hover {
+  border: 1px solid #000;
 }
 .products .products__item .product__display {
   position: relative;
@@ -702,12 +733,14 @@ body img {
 .pagination__indicator .pagination__indicator__dropdown {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .pagination__indicator .pagination__indicator__dropdown .pagination__indicator__dropdown__text {
   padding-right: 10px;
 }
 .pagination__indicator .pagination__indicator__dropdown .pagination__indicator__dropdown__img {
   width: 0.729vw;
+  cursor: pointer;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 102.938rem) {
@@ -733,6 +766,13 @@ body img {
   font-weight: 500;
   font-size: 0.833vw;
   color: #000;
+  letter-spacing: 0.12rem;
+}
+.pagination__control__next:hover {
+  color: #ffffff;
+  background-color: #000;
+  text-decoration: none;
+  transition: all ease 0.3s;
 }
 @media screen and (max-width: 102.938rem) {
   .pagination__control__next {
@@ -782,6 +822,9 @@ body img {
   text-decoration: none;
   color: #d3d7da;
   font-size: 0.66rem;
+}
+.legal__menu .legal__menu__item .legal__menu__item__a:hover {
+  color: #ffffff;
 }
 
 .colophon {

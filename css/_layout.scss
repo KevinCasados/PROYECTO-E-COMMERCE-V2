@@ -53,6 +53,12 @@
         font-size: 0.729vw;
         @include transition;
 
+        &:hover {
+            color: #000;
+            border-bottom: 3px solid #000;
+            transition: all ease;
+        }
+
         @include laptops {
             font-size: 0.950vw;
             @include transition;
@@ -222,6 +228,12 @@
         cursor: pointer;
         @include transition;
 
+        &:hover {
+            color: #ffffff;
+            background-color: #000;
+            text-decoration: none;
+        }
+
         @include laptops {
             font-size: 1.033vw;
             @include transition;
@@ -263,6 +275,11 @@
         color: #000; 
         @include transition;
 
+        &:hover {
+            color: #ffffff;
+            background-color: #000;
+        }
+
         @include laptops {
             font-size: 1.033vw;
             @include transition;
@@ -291,6 +308,11 @@
 
     .actual__page__link--alternative {
         text-decoration: none;
+
+        &:hover {
+            color: #000; 
+            background-color: #ffffff00;
+        }
     }
     
 }
@@ -370,6 +392,11 @@
 
     .carrousel__item__wrapper {
         margin: 0 14px 0 0;
+
+        &:hover {
+            color: #000;
+            border-bottom: 3px solid #000;
+        }
     }
 
     .nav__item {
@@ -378,6 +405,10 @@
         color: #767677;
         text-decoration: none;
         @include transition;
+
+        &:hover {
+            color: #000;
+        }
 
         @include laptops {
             font-size: 0.85vw;
@@ -401,6 +432,10 @@
         width: auto;
         background-color: #ffffff;
         @include transition;
+
+        &:hover {
+            color: #797b7b;
+        } 
 
         @include laptops {
             padding: 3px 6px;
@@ -465,6 +500,10 @@
         width: 100%;
         padding: 1px;
         margin-left: 0;
+
+        &:hover {
+            border: 1px solid #000;
+        }
 
         .product__display {
             position: relative;
@@ -641,6 +680,7 @@
 
     .pagination__indicator__dropdown{
         @include flexAlingCenter;
+        cursor: pointer;
         
         .pagination__indicator__dropdown__text {
             padding-right: 10px;
@@ -648,6 +688,7 @@
 
         .pagination__indicator__dropdown__img{
             width: 0.729vw;
+            cursor: pointer;
             @include transition;
 
             @include laptops {
@@ -672,6 +713,14 @@
     font-weight: 500;
     font-size: 0.833vw;
     color: #000;
+    letter-spacing: 0.12rem;
+
+    &:hover {
+        color: #ffffff;
+        background-color: #000;
+        text-decoration: none;
+        transition: all ease 0.3s;
+    }
 
     @include laptops {
         font-size: 1.050vw;
@@ -720,6 +769,10 @@
             text-decoration: none;
             color: #d3d7da;
             font-size: 0.66rem;
+
+            &:hover {
+                color: #ffffff;
+            }
         }
     }
 }
