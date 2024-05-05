@@ -22,7 +22,7 @@ body img {
 }
 .body .header {
   grid-area: header;
-  background-color: #919496;
+  background-color: #ffffff;
 }
 .body .main {
   grid-area: main;
