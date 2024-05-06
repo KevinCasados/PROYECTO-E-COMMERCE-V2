@@ -18,12 +18,17 @@
 
     .logo__adidas {
         width: 3.125vw;
+        cursor: pointer;
         @include transition;
 
         @include laptops {
             @include transition;
             width: 4.125vw;
         }
+    }
+
+    @include miniPhones {
+        display: none;
     }
 
 }
@@ -60,7 +65,7 @@
         }
 
         @include laptops {
-            font-size: 0.950vw;
+            font-size: 1.030vw;
             @include transition;
         }
 
@@ -72,6 +77,10 @@
 
     .categories--alternative {
         font-weight: 400;
+    }
+
+    @include miniPhones {
+        display: none;
     }
 }
 // Estilos del Header - Menu del Usuario
@@ -160,7 +169,7 @@
 
     .user__home__icons--alt {
         @include laptops {
-            width: 2.8vw;
+            width: 3vw;
             @include transition;
         }
 
@@ -176,7 +185,7 @@
     @include transition;
 
     @include laptops {
-        width: 1.40vw;
+        width: 1.80vw;
         @include transition;
     }
 
@@ -186,12 +195,13 @@
     }
 }
 
-.cart__img {
+.cart__img,
+.menu__img {
     width: 1.354vw;
     @include transition;
 
     @include laptops {
-        width: 1.45vw;
+        width: 1.85vw;
         @include transition;
     }
 
@@ -214,7 +224,12 @@
 .actual__page {
     @include flexAlingCenter;
     padding: 25px 2.125vw;
-    
+    @include transition;
+
+    @include miniPhones {
+        padding: 25px 4.125vw;
+        @include transition;
+    }
 
     .actual__page__back__btn {
         @include flexAlingCenter;
@@ -244,6 +259,15 @@
             @include transition;
         }
 
+        @include phones {
+            font-size: 1.633vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            display: none;
+        }
+
         .back__icon__img {
             width: 1.563vw;
             cursor: pointer;
@@ -258,6 +282,15 @@
             @include tablets {
                 width: 2.363vw;
                 @include transition;
+            }
+
+            @include phones {
+                width: 3vw;
+                @include transition;
+            }
+
+            @include miniPhones {
+                width: 3vw;
             }
         }
     }
@@ -289,6 +322,16 @@
             font-size: 1.233vw;
             @include transition;
         }
+
+        @include phones {
+            font-size: 1.633vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 2.433vw;
+            @include transition;
+        }
     }
 
     .separator {
@@ -302,6 +345,11 @@
 
         @include tablets {
             font-size: 1.233vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 2.433vw;
             @include transition;
         }
     }
@@ -328,6 +376,10 @@
         @include transition;
     }
 
+    @include miniPhones {
+        padding: 0 4.125vw 0px 4.125vw;
+    }
+
     .page__title__text {
         font-size: 1.667vw;
         font-style: italic;
@@ -341,6 +393,16 @@
 
         @include tablets {
             font-size: 2.267vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 2.467vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 3.567vw;
             @include transition;
         }
     }
@@ -357,6 +419,16 @@
             width: 2.383vw;
             @include transition;
         }
+
+        @include phones {
+            width: 2.683vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            width: 4.125vw;
+            @include transition;
+        }
     }
 
     .page__title__count__container {
@@ -368,6 +440,16 @@
 
         @include tablets {
             font-size: 0.967vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.167vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 1.667vw;
             @include transition;
         }
     }
@@ -435,6 +517,7 @@
 
         &:hover {
             color: #797b7b;
+            transition: all ease 0s;
         } 
 
         @include laptops {
@@ -446,6 +529,12 @@
             position: absolute;
             right: 2.1vw;
             top: 9.1vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            right: 4.1vw;
+            top: 12.1vw;
             @include transition;
         }
     }
@@ -464,6 +553,15 @@
             font-size: 1vw;
             @include transition;
         }
+
+        @include phones {
+            font-size: 1.45vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            display: none;
+        }
     }
 
     .carrousel__filter__img {
@@ -477,6 +575,16 @@
 
         @include tablets {
             width: 1.963vw;
+            @include transition;
+        }
+
+        @include phones {
+            width: 2.363vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            width: 3.863vw;
             @include transition;
         }
     }
@@ -493,6 +601,17 @@
 
     @include phones {
         grid-template-columns: repeat(3, 33.4%);
+        @include transition;
+    }
+
+    @include miniPhones {
+        grid-template-columns: repeat(2, 50%);
+        @include transition;
+        padding: 10px 4.125vw
+    }
+
+    @include pocketPhones {
+        grid-template-columns: repeat(1, 100%);
         @include transition;
     }
 
@@ -546,10 +665,30 @@
             bottom: 28.5vw;
             @include transition;
         }
+
+        @include miniPhones {
+            right: -43.5vw;
+            bottom: 41.2vw;    
+            @include transition;
+        }
+
+        @include pocketPhones {
+            right: -85.6vw;
+            bottom: 81.2vw;   
+            @include transition;
+        }
     }
 
     .products__add__favorites__img {
         width: 15px;
+
+        @include miniPhones {
+            width: 17px;
+        }
+
+        @include pocketPhones {
+            width: 22px;
+        }
     }
 }
 
@@ -592,6 +731,20 @@
             width: 5.5vw;
             @include transition;
         }
+
+        @include miniPhones {
+            font-size: 1.9vw;
+            bottom: 3.7vw;
+            width: 8.2vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            font-size: 3.5vw;
+            bottom: 6.1vw;
+            width: 14vw;
+            @include transition;
+        }
     }
 }
 
@@ -612,6 +765,16 @@
 
     @include phones {
         font-size: 1.400vw;
+        @include transition;
+    }
+
+    @include miniPhones {
+        font-size: 1.65vw;
+        @include transition;
+    }
+
+    @include pocketPhones {
+        font-size: 2.95vw;
         @include transition;
     }
 
@@ -642,6 +805,16 @@
             font-size: 1.200vw;
             @include transition;
         }
+
+        @include miniPhones {
+            font-size: 1.6vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            font-size: 2.5vw;
+            @include transition;
+        }
     }
 }
 
@@ -654,6 +827,10 @@
     padding: 10px 2.188vw 20px 2.188vw;
     display: flex;
     justify-content: space-between;
+
+    @include miniPhones {
+        padding: 10px 4.125vw 20px 4.125vw;
+    }
 }
     
 .pagination__indicator {
@@ -675,6 +852,16 @@
 
     @include phones {
         font-size: 1.650vw;
+        @include transition;
+    }
+
+    @include miniPhones {
+        font-size: 2.20vw;
+        @include transition;
+    }
+
+    @include pocketPhones {
+        font-size: 3vw;
         @include transition;
     }
 
@@ -705,6 +892,11 @@
                 width: 1.30vw;
                 @include transition;
             }
+
+            @include miniPhones {
+                width: 1.7vw;
+                @include transition;
+            }
         }
     }
 }
@@ -733,7 +925,17 @@
     }
 
     @include phones {
-        font-size: 1.650vw;
+        font-size: 1.45vw;
+        @include transition;
+    }
+
+    @include miniPhones {
+        font-size: 2vw;
+        @include transition;
+    }
+
+    @include pocketPhones {
+        font-size: 2.3vw;
         @include transition;
     }
 }
@@ -773,6 +975,23 @@
             &:hover {
                 color: #ffffff;
             }
+
+            @include transition;
+
+            @include tablets {
+                font-size: 0.95vw;
+                @include transition;
+            }
+
+            @include miniPhones {
+                font-size: 1.10vw;
+                @include transition;
+            }
+
+            @include pocketPhones {
+                font-size: 1.7vw;
+                @include transition;
+            }
         }
     }
 }
@@ -786,5 +1005,116 @@
         color: #d3d7da;
         text-align: center;
         font-size: 0.66rem;
+
+        @include transition;
+
+        @include tablets {
+            font-size: 0.95vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 1.15vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            font-size: 1.7vw;
+            @include transition;
+        }
+    }
+}
+
+
+
+//Estilos de la seccion Header 2.0
+
+.header__2 {
+    @include transition;
+    display: none;
+
+
+    @include phones {
+        border-bottom: 2px solid #eceff1;
+        position: absolute;
+        @include flexAlingCenter;
+        justify-content: space-between;
+        padding: 9px 2.125vw;
+        background-color: #ffffff;
+        width: 100%;
+        @include transition;
+
+        .header__2__left__icons,
+        .header__2__right__icons {
+            display: inline-flex;
+            gap: 2.0vw;
+            @include transition;
+        }
+
+        .menu__img__2,
+        .favorites__img__2,
+        .user__img__2,
+        .cart__img__2,
+        .search__img__2 {
+            width: 2.654vw;
+            @include transition;
+        }
+
+        .logo__adidas__2 {
+            width: 7.125vw;
+            @include transition;
+        }
+    } 
+    
+    @include miniPhones {
+        @include transition;
+        padding: 9px 4.125vw;
+
+        .header__2__left__icons,
+        .header__2__right__icons {
+            display: inline-flex;
+            gap: 3vw;
+            @include transition;
+        }
+
+        .menu__img__2,
+        .favorites__img__2,
+        .user__img__2,
+        .cart__img__2,
+        .search__img__2 {
+            width: 3.5vw;
+            @include transition;
+        }
+
+        .logo__adidas__2 {
+            width: 7.125vw;
+            @include transition;
+        }
+    }
+
+    @include pocketPhones {
+        @include transition;
+        padding: 9px 4.125vw;
+
+        .header__2__left__icons,
+        .header__2__right__icons {
+            display: inline-flex;
+            gap: 3vw;
+            @include transition;
+        }
+
+        .menu__img__2,
+        .favorites__img__2,
+        .user__img__2,
+        .cart__img__2,
+        .search__img__2 {
+            width: 4.5vw;
+            @include transition;
+        }
+
+        .logo__adidas__2 {
+            width: 8.425vw;
+            @include transition;
+        }
     }
 }

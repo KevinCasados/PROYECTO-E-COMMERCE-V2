@@ -54,12 +54,18 @@ body img {
 }
 .logo__container .logo__adidas {
   width: 3.125vw;
+  cursor: pointer;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 102.938rem) {
   .logo__container .logo__adidas {
     transition: all ease 0.2s;
     width: 4.125vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .logo__container {
+    display: none;
   }
 }
 
@@ -100,7 +106,7 @@ body img {
 }
 @media screen and (max-width: 102.938rem) {
   .product__categories .categories {
-    font-size: 0.95vw;
+    font-size: 1.03vw;
     transition: all ease 0.2s;
   }
 }
@@ -112,6 +118,11 @@ body img {
 }
 .product__categories .categories--alternative {
   font-weight: 400;
+}
+@media screen and (max-width: 40.813rem) {
+  .product__categories {
+    display: none;
+  }
 }
 
 .user__home {
@@ -204,7 +215,7 @@ body img {
 }
 @media screen and (max-width: 102.938rem) {
   .user__home .user__home__icons--alt {
-    width: 2.8vw;
+    width: 3vw;
     transition: all ease 0.2s;
   }
 }
@@ -222,7 +233,7 @@ body img {
 @media screen and (max-width: 102.938rem) {
   .user__img,
   .favorites__img {
-    width: 1.4vw;
+    width: 1.8vw;
     transition: all ease 0.2s;
   }
 }
@@ -234,18 +245,21 @@ body img {
   }
 }
 
-.cart__img {
+.cart__img,
+.menu__img {
   width: 1.354vw;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 102.938rem) {
-  .cart__img {
-    width: 1.45vw;
+  .cart__img,
+  .menu__img {
+    width: 1.85vw;
     transition: all ease 0.2s;
   }
 }
 @media screen and (max-width: 57.5rem) {
-  .cart__img {
+  .cart__img,
+  .menu__img {
     width: 2.3vw;
     transition: all ease 0.2s;
   }
@@ -262,6 +276,13 @@ body img {
   display: flex;
   align-items: center;
   padding: 25px 2.125vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 40.813rem) {
+  .actual__page {
+    padding: 25px 4.125vw;
+    transition: all ease 0.2s;
+  }
 }
 .actual__page .actual__page__back__btn {
   display: flex;
@@ -293,6 +314,17 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 57.5rem) {
+  .actual__page .actual__page__back__btn {
+    font-size: 1.633vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .actual__page .actual__page__back__btn {
+    display: none;
+  }
+}
 .actual__page .actual__page__back__btn .back__icon__img {
   width: 1.563vw;
   cursor: pointer;
@@ -309,6 +341,17 @@ body img {
   .actual__page .actual__page__back__btn .back__icon__img {
     width: 2.363vw;
     transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .actual__page .actual__page__back__btn .back__icon__img {
+    width: 3vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .actual__page .actual__page__back__btn .back__icon__img {
+    width: 3vw;
   }
 }
 
@@ -341,6 +384,18 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 57.5rem) {
+  .actual__page__item .actual__page__link {
+    font-size: 1.633vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .actual__page__item .actual__page__link {
+    font-size: 2.433vw;
+    transition: all ease 0.2s;
+  }
+}
 .actual__page__item .separator {
   padding-right: 5px;
   transition: all ease 0.2s;
@@ -354,6 +409,12 @@ body img {
 @media screen and (max-width: 71rem) {
   .actual__page__item .separator {
     font-size: 1.233vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .actual__page__item .separator {
+    font-size: 2.433vw;
     transition: all ease 0.2s;
   }
 }
@@ -377,6 +438,11 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 40.813rem) {
+  .page__title {
+    padding: 0 4.125vw 0px 4.125vw;
+  }
+}
 .page__title .page__title__text {
   font-size: 1.667vw;
   font-style: italic;
@@ -395,6 +461,18 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 57.5rem) {
+  .page__title .page__title__text {
+    font-size: 2.467vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .page__title .page__title__text {
+    font-size: 3.567vw;
+    transition: all ease 0.2s;
+  }
+}
 .page__title .page__title__dot__separator {
   position: relative;
   transform: translateY(22%);
@@ -409,6 +487,18 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 57.5rem) {
+  .page__title .page__title__dot__separator {
+    width: 2.683vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .page__title .page__title__dot__separator {
+    width: 4.125vw;
+    transition: all ease 0.2s;
+  }
+}
 .page__title .page__title__count__container {
   transform: translateY(31%);
   padding-left: 10px;
@@ -419,6 +509,18 @@ body img {
 @media screen and (max-width: 71rem) {
   .page__title .page__title__count__container {
     font-size: 0.967vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .page__title .page__title__count__container {
+    font-size: 1.167vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .page__title .page__title__count__container {
+    font-size: 1.667vw;
     transition: all ease 0.2s;
   }
 }
@@ -486,6 +588,7 @@ body img {
 }
 .carrousel .carrousel__filter__btn:hover {
   color: #797b7b;
+  transition: all ease 0s;
 }
 @media screen and (max-width: 102.938rem) {
   .carrousel .carrousel__filter__btn {
@@ -498,6 +601,13 @@ body img {
     position: absolute;
     right: 2.1vw;
     top: 9.1vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .carrousel .carrousel__filter__btn {
+    right: 4.1vw;
+    top: 12.1vw;
     transition: all ease 0.2s;
   }
 }
@@ -517,6 +627,17 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 57.5rem) {
+  .carrousel .carrousel__filter__P {
+    font-size: 1.45vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .carrousel .carrousel__filter__P {
+    display: none;
+  }
+}
 .carrousel .carrousel__filter__img {
   width: 1.563vw;
   transition: all ease 0.2s;
@@ -533,6 +654,18 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 57.5rem) {
+  .carrousel .carrousel__filter__img {
+    width: 2.363vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .carrousel .carrousel__filter__img {
+    width: 3.863vw;
+    transition: all ease 0.2s;
+  }
+}
 
 .products {
   display: grid;
@@ -543,6 +676,19 @@ body img {
 @media screen and (max-width: 57.5rem) {
   .products {
     grid-template-columns: repeat(3, 33.4%);
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .products {
+    grid-template-columns: repeat(2, 50%);
+    transition: all ease 0.2s;
+    padding: 10px 4.125vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .products {
+    grid-template-columns: repeat(1, 100%);
     transition: all ease 0.2s;
   }
 }
@@ -594,8 +740,32 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 40.813rem) {
+  .products__add__favorites__container .products__add__favorites__btn {
+    right: -43.5vw;
+    bottom: 41.2vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .products__add__favorites__container .products__add__favorites__btn {
+    right: -85.6vw;
+    bottom: 81.2vw;
+    transition: all ease 0.2s;
+  }
+}
 .products__add__favorites__container .products__add__favorites__img {
   width: 15px;
+}
+@media screen and (max-width: 40.813rem) {
+  .products__add__favorites__container .products__add__favorites__img {
+    width: 17px;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .products__add__favorites__container .products__add__favorites__img {
+    width: 22px;
+  }
 }
 
 .products__price {
@@ -640,6 +810,22 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 40.813rem) {
+  .products__price .products__price__text {
+    font-size: 1.9vw;
+    bottom: 3.7vw;
+    width: 8.2vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .products__price .products__price__text {
+    font-size: 3.5vw;
+    bottom: 6.1vw;
+    width: 14vw;
+    transition: all ease 0.2s;
+  }
+}
 
 .products__description__container {
   padding: 10px 10px 20px 10px;
@@ -661,6 +847,18 @@ body img {
 @media screen and (max-width: 57.5rem) {
   .products__description__container {
     font-size: 1.4vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .products__description__container {
+    font-size: 1.65vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .products__description__container {
+    font-size: 2.95vw;
     transition: all ease 0.2s;
   }
 }
@@ -693,6 +891,18 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 40.813rem) {
+  .products__description__container .products__description__label {
+    font-size: 1.6vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .products__description__container .products__description__label {
+    font-size: 2.5vw;
+    transition: all ease 0.2s;
+  }
+}
 
 .products__description {
   text-decoration: none;
@@ -702,6 +912,11 @@ body img {
   padding: 10px 2.188vw 20px 2.188vw;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 40.813rem) {
+  .pagination {
+    padding: 10px 4.125vw 20px 4.125vw;
+  }
 }
 
 .pagination__indicator {
@@ -727,6 +942,18 @@ body img {
 @media screen and (max-width: 57.5rem) {
   .pagination__indicator {
     font-size: 1.65vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .pagination__indicator {
+    font-size: 2.2vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .pagination__indicator {
+    font-size: 3vw;
     transition: all ease 0.2s;
   }
 }
@@ -761,6 +988,12 @@ body img {
     transition: all ease 0.2s;
   }
 }
+@media screen and (max-width: 40.813rem) {
+  .pagination__indicator .pagination__indicator__dropdown .pagination__indicator__dropdown__img {
+    width: 1.7vw;
+    transition: all ease 0.2s;
+  }
+}
 
 .pagination__control__next {
   font-weight: 500;
@@ -788,7 +1021,19 @@ body img {
 }
 @media screen and (max-width: 57.5rem) {
   .pagination__control__next {
-    font-size: 1.65vw;
+    font-size: 1.45vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .pagination__control__next {
+    font-size: 2vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .pagination__control__next {
+    font-size: 2.3vw;
     transition: all ease 0.2s;
   }
 }
@@ -822,9 +1067,28 @@ body img {
   text-decoration: none;
   color: #d3d7da;
   font-size: 0.66rem;
+  transition: all ease 0.2s;
 }
 .legal__menu .legal__menu__item .legal__menu__item__a:hover {
   color: #ffffff;
+}
+@media screen and (max-width: 71rem) {
+  .legal__menu .legal__menu__item .legal__menu__item__a {
+    font-size: 0.95vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .legal__menu .legal__menu__item .legal__menu__item__a {
+    font-size: 1.1vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .legal__menu .legal__menu__item .legal__menu__item__a {
+    font-size: 1.7vw;
+    transition: all ease 0.2s;
+  }
 }
 
 .colophon {
@@ -836,4 +1100,107 @@ body img {
   color: #d3d7da;
   text-align: center;
   font-size: 0.66rem;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .colophon .colophon__text {
+    font-size: 0.95vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .colophon .colophon__text {
+    font-size: 1.15vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .colophon .colophon__text {
+    font-size: 1.7vw;
+    transition: all ease 0.2s;
+  }
+}
+
+.header__2 {
+  transition: all ease 0.2s;
+  display: none;
+}
+@media screen and (max-width: 57.5rem) {
+  .header__2 {
+    border-bottom: 2px solid #eceff1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 2.125vw;
+    background-color: #ffffff;
+    width: 100%;
+    transition: all ease 0.2s;
+  }
+  .header__2 .header__2__left__icons,
+  .header__2 .header__2__right__icons {
+    display: inline-flex;
+    gap: 2vw;
+    transition: all ease 0.2s;
+  }
+  .header__2 .menu__img__2,
+  .header__2 .favorites__img__2,
+  .header__2 .user__img__2,
+  .header__2 .cart__img__2,
+  .header__2 .search__img__2 {
+    width: 2.654vw;
+    transition: all ease 0.2s;
+  }
+  .header__2 .logo__adidas__2 {
+    width: 7.125vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .header__2 {
+    transition: all ease 0.2s;
+    padding: 9px 4.125vw;
+  }
+  .header__2 .header__2__left__icons,
+  .header__2 .header__2__right__icons {
+    display: inline-flex;
+    gap: 3vw;
+    transition: all ease 0.2s;
+  }
+  .header__2 .menu__img__2,
+  .header__2 .favorites__img__2,
+  .header__2 .user__img__2,
+  .header__2 .cart__img__2,
+  .header__2 .search__img__2 {
+    width: 3.5vw;
+    transition: all ease 0.2s;
+  }
+  .header__2 .logo__adidas__2 {
+    width: 7.125vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .header__2 {
+    transition: all ease 0.2s;
+    padding: 9px 4.125vw;
+  }
+  .header__2 .header__2__left__icons,
+  .header__2 .header__2__right__icons {
+    display: inline-flex;
+    gap: 3vw;
+    transition: all ease 0.2s;
+  }
+  .header__2 .menu__img__2,
+  .header__2 .favorites__img__2,
+  .header__2 .user__img__2,
+  .header__2 .cart__img__2,
+  .header__2 .search__img__2 {
+    width: 4.5vw;
+    transition: all ease 0.2s;
+  }
+  .header__2 .logo__adidas__2 {
+    width: 8.425vw;
+    transition: all ease 0.2s;
+  }
 }/*# sourceMappingURL=main.css.map */

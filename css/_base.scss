@@ -36,3 +36,11 @@ $letterSpacing: 0.03rem;
 @mixin phones {
     @media screen and (max-width: 57.5rem) {@content};
 }
+
+@mixin miniPhones {
+    @media screen and (max-width: 40.813rem) {@content};
+}
+
+@mixin pocketPhones {
+    @media screen and (max-width: 34.5rem) {@content};
+}
