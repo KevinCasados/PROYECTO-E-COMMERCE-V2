@@ -1118,3 +1118,235 @@
         }
     }
 }
+
+//Estilos de la seccion cart
+
+.cart {
+    width: 26.042vw;
+    background-color: #ffffff;
+    padding: 1.302vw;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    right: 0%;
+    top: 6.431vw;
+    box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, .30);
+    transition: all .25s ease;
+
+    @include laptops {
+        top: 7.631vw;
+    }
+
+    @include tablets {
+        width: 32.042vw;
+        top: 9.731vw;
+    }
+
+    @include phones {
+        width: 40.942vw;
+        top: 13.631vw;
+    }
+
+    @include miniPhones {
+        width: 53.942vw;
+        top: 13.631vw;
+    }
+
+    @include pocketPhones {
+        width: 100%;
+        padding: 4.202vw;
+        top: 15.031vw;
+    }
+
+    .cart__title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.042vw;
+        font-weight: 600;
+        padding: 1.302vw 0;
+        box-sizing: border-box;
+        @include transition;
+
+        @include tablets {
+            font-size: 1.442vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.842vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 2.442vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            font-size: 3.642vw;
+            @include transition;
+        }
+    }
+}
+
+.cart__shopping {
+    border-bottom: 0.156vw solid #eceff1;
+    display: flex;
+    justify-content: space-between;   
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0.781vw 0.104vw;
+    gap: 1.281vw;
+
+    @include pocketPhones {
+        border-bottom: 0.356vw solid #eceff1;
+        padding: 2.681vw 0.104vw;
+        @include transition;
+    }
+
+    .cart__img {
+        width: 5.521vw;
+        @include transition;
+
+        @include tablets {
+            width: 6.321vw;
+            @include transition;
+        }
+
+        @include phones {
+            width: 8.021vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            width: 10.821vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            width: 17.521vw;
+            padding: 0.781vw 0.104vw;
+            @include transition;
+        }
+    }
+    
+    .cart__description {
+        text-align: center;
+        font-size: 0.663vw;
+        width: 100%;
+        padding: 0;
+        @include transition;
+
+        @include tablets {
+            font-size: 0.863vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.22vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 1.36vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            font-size: 2.36vw;
+            @include transition;
+        }
+    }
+    
+    .cart__price {
+        font-weight: 600;
+        @include transition;
+
+        @include tablets {
+            font-size: 1.033vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.233vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            font-size: 1.533vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            font-size: 2.233vw;
+            @include transition;
+        }
+    }
+    
+    .cart__delete {
+        width: 1.676vw;
+        cursor: pointer;
+        padding: 0.313vw;
+        @include transition;
+
+        @include tablets {
+            width: 1.976vw;
+            @include transition;
+        }
+
+        @include phones {
+            width: 2.376vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            width: 2.686vw;
+            @include transition;
+        }
+
+        @include miniPhones {
+            width: 3.786vw;
+            @include transition;
+        }
+    }
+
+}
+
+.proceed__purchase {
+    @include flexAlingCenter;
+    justify-content: center;
+    padding: 1.042vw 0;
+
+    .proceed__purchase__btn {
+        width: 100%;
+        cursor: pointer;
+        padding: 0.421vw;
+        font-family: $fontFamily;
+        background-color: #000;
+        color: #ffffff;
+        font-size: 0.733vw;
+        letter-spacing: $letterSpacing;
+        @include transition;
+
+        @include tablets {
+            font-size: 0.833vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.233vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 1.573vw;
+            @include transition;
+        }
+
+        @include phones {
+            font-size: 2.673vw;
+            @include transition;
+        }
+    }
+    
+}
