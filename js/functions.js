@@ -18,24 +18,23 @@ deleteIcons.forEach(icon => {
 
 //Codigo para agregar un producto al carrito
 
-// Seleccionamos todos los botones de añadir a favoritos
+// Selecciona todos los botones de favoritos
 const favoriteButtons = document.querySelectorAll('.products__add__favorites__btn');
 
-// Encontramos el contenedor del carrito
-const cartSection = document.querySelector('.cart');
+// Selecciona el contenedor de artículos en el carrito
+const cartItemsContainer = document.querySelector('.cart__items');
 
-// Añadimos un evento de clic a cada botón de favoritos
+// Agrega el evento de clic para cada botón de favoritos
 favoriteButtons.forEach(button => {
     button.addEventListener('click', (event) => {
-        // Obtenemos el artículo del producto relacionado al botón de favoritos
         const productItem = event.target.closest('.products__item');
 
-        // Extraemos la información del producto
+        // Extrae la información del producto
         const productImg = productItem.querySelector('.products__img').src;
         const productDescription = productItem.querySelector('.products__description__title').innerText;
         const productPrice = productItem.querySelector('.products__price__text').innerText;
 
-        // Creamos un nuevo artículo para agregarlo al carrito
+        // Crea un nuevo artículo para agregarlo al carrito
         const cartItem = document.createElement('article');
         cartItem.classList.add('cart__shopping');
         cartItem.innerHTML = `
@@ -45,10 +44,10 @@ favoriteButtons.forEach(button => {
             <img class="cart__delete" src="img/cancel-delete-remove-svgrepo-com.svg" alt="Icono Quitar">
         `;
 
-        // Añadimos el nuevo artículo al carrito
-        cartSection.appendChild(cartItem);
+        // Añade el nuevo artículo al contenedor de artículos en el carrito
+        cartItemsContainer.appendChild(cartItem);
 
-        // Añadimos un evento de clic al ícono de eliminación recién creado
+        // Agrega un evento de clic al ícono de eliminación
         const deleteIcon = cartItem.querySelector('.cart__delete');
         deleteIcon.addEventListener('click', (event) => {
             const itemToRemove = event.target.closest('.cart__shopping');
@@ -59,26 +58,58 @@ favoriteButtons.forEach(button => {
     });
 });
 
-
 // Mostrar Carrito de Compras al dar click
-const header = document.querySelector("header");
-const logos = header.querySelectorAll(".header__logo");
-const cartIcon = logos[2];  
-const cart = document.querySelector(".cart__img");
 
-cartIcon.addEventListener("click", () => {
-    cart.classList.toggle("show");
+// Función para abrir o cerrar el carrito
+function toggleCart(event) {
+    // Previene el comportamiento predeterminado del enlace
+    event.preventDefault();
+
+    const cart = document.querySelector('.cart');
+    // Verifica si el carrito está visible o no
+    if (cart.style.right === '0px') {
+        cart.style.right = '-100%'; // Esconde el carrito
+    } else {
+        cart.style.right = '0px'; // Muestra el carrito
+    }
+}
+
+// Asigna la función a los íconos con ID `cart__img__open__cart` y `cart__img__open__cart__v2`
+document.getElementById('cart__img__open__cart').addEventListener('click', toggleCart);
+
+// Asegúrate de que este elemento exista en tu HTML antes de asignarle un manejador de eventos
+if (document.getElementById('cart__img__open__cart__v2')) {
+    document.getElementById('cart__img__open__cart__v2').addEventListener('click', toggleCart);
+}
+
+
+
+// Cerrar carrito con el boton X
+
+document.querySelector('.cart__exit').addEventListener('click', function() {
+    const cart = document.querySelector('.cart');
+    cart.style.right = '-100%'; 
 });
 
-// Hover de opacidad para los productos
-const products = document.querySelectorAll(".products__item");
 
-products.forEach(product => {
-    product.addEventListener("mouseenter", () => {
-        product.style.opacity = ".5";
-    });
+// Animacion del Header principal
 
-    product.addEventListener("mouseleave", () => {
-        product.style.opacity = "1";
-    });
+let lastScrollTop = 0; // Guardar la última posición de desplazamiento
+const header = document.querySelector('.header');
+const buffer = 20; // Distancia en píxeles antes de hacer aparecer el header
+
+window.addEventListener('scroll', function() {
+    let currentScroll = window.scrollY; 
+
+    // Si desplazamos hacia abajo más de `buffer` píxeles y el header no está visible
+    if (currentScroll > lastScrollTop + buffer) {
+        header.classList.add('hidden');
+    } 
+    // Si desplazamos hacia arriba o volvemos al principio
+    else if (currentScroll < lastScrollTop - buffer || currentScroll <= 0) {
+        header.classList.remove('hidden');
+    }
+
+    // Actualiza la última posición de desplazamiento
+    lastScrollTop = currentScroll;
 });

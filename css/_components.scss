@@ -34,6 +34,23 @@ body {
     .main {
         grid-area: main;
         background-color: #ffffff;
+        margin-top: 7.458vw;
+        @include transition;
+
+        @include tablets {
+            margin-top: 8.458vw;
+            @include transition;
+        }
+
+        @include phones {
+            margin-top: 10.958vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            margin-top: 14.158vw;
+            @include transition;
+        }
     }
 
     .footer {
