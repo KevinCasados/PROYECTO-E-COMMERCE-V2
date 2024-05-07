@@ -4,13 +4,25 @@
     justify-content: space-between;
     border-bottom: 2px solid #eceff1;
     padding: 20px 40px 20px 40px;
-    @include transition;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out; 
 
     @include tablets {
         padding: 20px 24px 20px 40px;
         @include transition;
     }
+
+    @include phones {
+        display: none;
+    }
 }
+
+.header.hidden {
+    transform: translateY(-100%); /* Desplaza el header fuera de la pantalla */
+}
+
 // Estilos del Header - logo principal
 .logo__container {
     @include flexAlingCenter;
@@ -1036,12 +1048,13 @@
 
     @include phones {
         border-bottom: 2px solid #eceff1;
-        position: absolute;
+        position: fixed;
         @include flexAlingCenter;
         justify-content: space-between;
         padding: 9px 2.125vw;
         background-color: #ffffff;
         width: 100%;
+        z-index: 1000;
         @include transition;
 
         .header__2__left__icons,
@@ -1126,12 +1139,15 @@
     background-color: #ffffff;
     padding: 1.302vw;
     box-sizing: border-box;
-    height: 100%;
+    height: 33.495vw;
     position: fixed;
-    right: 0%;
+    right: -100%;
     top: 6.431vw;
     box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, .30);
-    transition: all .25s ease;
+    transition: right 0.5s;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
 
     @include laptops {
         top: 7.631vw;
@@ -1154,8 +1170,41 @@
 
     @include pocketPhones {
         width: 100%;
+        height: 80%;
         padding: 4.202vw;
         top: 15.031vw;
+    }
+
+    .cart__header {
+        @include flexAlingCenter;
+        justify-content: space-between;
+        padding: 0.313vw; 
+
+        .cart__exit {
+            width: 0.99vw; 
+            cursor: pointer;
+            @include transition;
+
+            @include tablets {
+                width: 1.29vw;
+                @include transition;
+            }
+
+            @include phones {
+                width: 1.59vw;
+                @include transition;
+            }
+
+            @include miniPhones {
+                width: 1.99vw;
+                @include transition;
+            }
+
+            @include pocketPhones {
+                width: 3.19vw;
+                @include transition;
+            }
+        }
     }
 
     .cart__title {
@@ -1187,6 +1236,11 @@
             @include transition;
         }
     }
+}
+
+.cart__items {
+    overflow-y: auto; /* Habilita el scroll vertical */
+    flex-grow: 1; /* Hace que el contenedor de artículos tome el espacio restante */
 }
 
 .cart__shopping {
@@ -1316,6 +1370,7 @@
     @include flexAlingCenter;
     justify-content: center;
     padding: 1.042vw 0;
+    flex-shrink: 0;
 
     .proceed__purchase__btn {
         width: 100%;
@@ -1343,7 +1398,7 @@
             @include transition;
         }
 
-        @include phones {
+        @include pocketPhones {
             font-size: 2.673vw;
             @include transition;
         }
