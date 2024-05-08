@@ -1535,4 +1535,345 @@ body img {
     font-size: 2.673vw;
     transition: all ease 0.2s;
   }
+}
+
+.menu {
+  width: 26.042vw;
+  background-color: #ffffff;
+  padding: 0.502vw 1.302vw 1.302vw 1.302vw;
+  box-sizing: border-box;
+  position: fixed;
+  right: 0%;
+  top: 6.431vw;
+  box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, 0.3);
+  transition: right 0.5s;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 102.938rem) {
+  .menu {
+    top: 7.631vw;
+  }
+}
+@media screen and (max-width: 71rem) {
+  .menu {
+    width: 32.042vw;
+    top: 9.731vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu {
+    width: 40.942vw;
+    top: 13.631vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu {
+    width: 53.942vw;
+    top: 13.631vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu {
+    width: 100%;
+    padding: 4.202vw;
+    top: 15.031vw;
+  }
+}
+.menu .menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2PX solid #eceff1;
+  padding: 0.521vw 0;
+}
+.menu .menu__header .logo__adidas__menu {
+  width: 2.2vw;
+  margin: 0 10.145vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu .menu__header .logo__adidas__menu {
+    transition: all ease 0.2s;
+    width: 3vw;
+    margin: 0 12.545vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu .menu__header .logo__adidas__menu {
+    transition: all ease 0.2s;
+    width: 4.5vw;
+    margin: 0 15.945vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu .menu__header .logo__adidas__menu {
+    transition: all ease 0.2s;
+    width: 6.6vw;
+    margin: 0 21.145vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu .menu__header .logo__adidas__menu {
+    transition: all ease 0.2s;
+    width: 10vw;
+    margin: 0 37.645vw;
+  }
+}
+.menu .menu__header .menu__exit {
+  width: 0.894vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu .menu__header .menu__exit {
+    transition: all ease 0.2s;
+    width: 1.294vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu .menu__header .menu__exit {
+    transition: all ease 0.2s;
+    width: 1.694vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu .menu__header .menu__exit {
+    transition: all ease 0.2s;
+    width: 2.294vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu .menu__header .menu__exit {
+    transition: all ease 0.2s;
+    width: 3.794vw;
+  }
+}
+
+.menu__categories__container {
+  padding: 0.602vw 0.002vw;
+  border-bottom: 2px solid #eceff1;
+  transition: all ease 0.2s;
+}
+.menu__categories__container .menu__categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.15vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 102.938rem) {
+  .menu__categories__container .menu__categories {
+    transition: all ease 0.2s;
+    padding-top: 1.05vw;
+  }
+}
+.menu__categories__container .menu__categories__left {
+  display: flex;
+  align-items: center;
+}
+.menu__categories__container .menu__categories__dot {
+  width: 1.302vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu__categories__container .menu__categories__dot {
+    transition: all ease 0.2s;
+    width: 1.802vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu__categories__container .menu__categories__dot {
+    transition: all ease 0.2s;
+    width: 2.702vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu__categories__container .menu__categories__dot {
+    transition: all ease 0.2s;
+    width: 4.202vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu__categories__container .menu__categories__dot {
+    transition: all ease 0.2s;
+    width: 7.002vw;
+  }
+}
+.menu__categories__container .menu__categories__arrow {
+  width: 0.833vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu__categories__container .menu__categories__arrow {
+    transition: all ease 0.2s;
+    width: 1.033vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu__categories__container .menu__categories__arrow {
+    transition: all ease 0.2s;
+    width: 1.533vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu__categories__container .menu__categories__arrow {
+    transition: all ease 0.2s;
+    width: 1.933vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu__categories__container .menu__categories__arrow {
+    transition: all ease 0.2s;
+    width: 3.033vw;
+  }
+}
+
+.user__options__menu {
+  padding: 0.302vw 0.002vw 0 0.002vw;
+  border-bottom: 2px solid #eceff1;
+}
+.user__options__menu .user__options__menu__a {
+  text-decoration: none;
+  color: inherit;
+}
+.user__options__menu .user__options__menu__p {
+  padding: 0.502vw 0.502vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 57.5rem) {
+  .user__options__menu .user__options__menu__p {
+    transition: all ease 0.2s;
+    padding: 0.702vw 1.002vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .user__options__menu .user__options__menu__p {
+    transition: all ease 0.2s;
+    padding: 0.902vw 1.502vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .user__options__menu .user__options__menu__p {
+    transition: all ease 0.2s;
+    padding: 1.602vw 2.502vw;
+  }
+}
+
+.menu__footer {
+  padding: 0.502vw 0.402vw;
+  display: flex;
+  gap: 0 0.521vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 57.5rem) {
+  .menu__footer {
+    transition: all ease 0.2s;
+    padding: 0.502vw 1.102vw;
+    gap: 0 0.821vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu__footer {
+    transition: all ease 0.2s;
+    padding: 0.502vw 1.502vw;
+    gap: 0 1.121vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu__footer {
+    transition: all ease 0.2s;
+    padding: 1.002vw 2.502vw;
+    gap: 0 1.421vw;
+  }
+}
+.menu__footer .menu__footer__flag {
+  width: 1.042vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu__footer .menu__footer__flag {
+    transition: all ease 0.2s;
+    width: 1.342vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu__footer .menu__footer__flag {
+    transition: all ease 0.2s;
+    width: 1.542vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu__footer .menu__footer__flag {
+    transition: all ease 0.2s;
+    width: 2.042vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu__footer .menu__footer__flag {
+    transition: all ease 0.2s;
+    width: 2.842vw;
+  }
+}
+.menu__footer .menu__footer__text {
+  font-size: 0.833vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu__footer .menu__footer__text {
+    transition: all ease 0.2s;
+    font-size: 1.033vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu__footer .menu__footer__text {
+    transition: all ease 0.2s;
+    font-size: 1.233vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu__footer .menu__footer__text {
+    transition: all ease 0.2s;
+    font-size: 1.633vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu__footer .menu__footer__text {
+    transition: all ease 0.2s;
+    font-size: 2.533vw;
+  }
+}
+
+.menu__categories,
+.user__options__menu__p {
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 71rem) {
+  .menu__categories,
+  .user__options__menu__p {
+    transition: all ease 0.2s;
+    font-size: 1.033vw;
+  }
+}
+@media screen and (max-width: 57.5rem) {
+  .menu__categories,
+  .user__options__menu__p {
+    transition: all ease 0.2s;
+    font-size: 1.233vw;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .menu__categories,
+  .user__options__menu__p {
+    transition: all ease 0.2s;
+    font-size: 1.733vw;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .menu__categories,
+  .user__options__menu__p {
+    transition: all ease 0.2s;
+    font-size: 3.033vw;
+  }
 }/*# sourceMappingURL=main.css.map */

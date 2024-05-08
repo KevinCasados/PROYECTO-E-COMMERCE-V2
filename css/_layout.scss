@@ -1405,3 +1405,310 @@
     }
     
 }
+
+// Inicio de los estilos del Menu
+
+.menu {
+    width: 26.042vw;
+    background-color: #ffffff;
+    padding: 0.502vw 1.302vw 1.302vw 1.302vw;
+    box-sizing: border-box;
+    position: fixed;
+    right: 0%;
+    top: 6.431vw;
+    box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, .30);
+    transition: right 0.5s;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    @include transition;
+
+    @include laptops {
+        top: 7.631vw;
+    }
+
+    @include tablets {
+        width: 32.042vw;
+        top: 9.731vw;
+    }
+
+    @include phones {
+        width: 40.942vw;
+        top: 13.631vw;
+    }
+
+    @include miniPhones {
+        width: 53.942vw;
+        top: 13.631vw;
+    }
+
+    @include pocketPhones {
+        width: 100%;
+        padding: 4.202vw;
+        top: 15.031vw;
+    }
+
+    .menu__header {
+        @include flexAlingCenter;
+        justify-content: space-between;
+        border-bottom: 2PX solid #eceff1;
+        padding: 0.521vw 0;
+
+        .logo__adidas__menu {
+            width: 2.2vw;
+            margin: 0 10.145vw;
+            @include transition;
+
+            @include tablets {
+                @include transition;
+                width: 3vw;
+                margin: 0 12.545vw;
+            }
+
+            @include phones {
+                @include transition;
+                width: 4.5vw;
+                margin: 0 15.945vw;
+            }
+
+            @include miniPhones {
+                @include transition;
+                width: 6.6vw;
+                margin: 0 21.145vw;
+            }
+
+            @include pocketPhones {
+                @include transition;
+                width: 10vw;
+                margin: 0 37.645vw;
+            }
+        }
+
+        .menu__exit {
+            width: 0.894vw;
+            @include transition;
+
+            @include tablets {
+                @include transition;
+                width: 1.294vw;
+            }
+
+            @include phones {
+                @include transition;
+                width: 1.694vw;
+            }
+
+            @include miniPhones {
+                @include transition;
+                width: 2.294vw;
+            }
+
+            @include pocketPhones {
+                @include transition;
+                width: 3.794vw;
+            }
+        }
+    }
+}
+
+.menu__categories__container {
+    padding: 0.602vw 0.002vw;
+    border-bottom: 2px solid #eceff1;
+    @include transition;
+
+    .menu__categories {
+        @include flexAlingCenter;
+        justify-content: space-between;
+        padding-top: 1.150vw;
+        @include transition;
+
+        @include laptops {
+            @include transition;
+            padding-top: 1.05vw;
+        }
+    }
+
+    .menu__categories__left {
+        @include flexAlingCenter;
+    }
+
+    .menu__categories__dot {
+        width: 1.302vw;
+        @include transition;
+
+        @include tablets {
+            @include transition;
+            width: 1.802vw;
+        }
+
+        @include phones {
+            @include transition;
+            width: 2.702vw;
+        }
+
+        @include miniPhones {
+            @include transition;
+            width: 4.202vw;
+        }
+
+        @include pocketPhones {
+            @include transition;
+            width: 7.002vw;
+        }
+    }
+
+    .menu__categories__arrow {
+        width: 0.833vw;
+        @include transition;
+
+        @include tablets {
+            @include transition;
+            width: 1.033vw;
+        }
+
+        @include phones {
+            @include transition;
+            width: 1.533vw;
+        }
+
+        @include miniPhones {
+            @include transition;
+            width: 1.933vw;
+        }
+
+        @include pocketPhones {
+            @include transition;
+            width: 3.033vw;
+        }
+    }
+}
+
+.user__options__menu {
+    padding: 0.302vw 0.002vw 0 0.002vw;
+    border-bottom: 2px solid #eceff1;
+
+    .user__options__menu__a {
+        @include aReset;
+    }
+
+    .user__options__menu__p {
+        padding: 0.502vw 0.502vw;
+        @include transition;
+
+        @include phones {
+            @include transition;
+            padding: 0.702vw 1.002vw;
+        }
+
+        @include miniPhones {
+            @include transition;
+            padding: 0.902vw 1.502vw;
+        }
+
+        @include pocketPhones {
+            @include transition;
+            padding: 1.602vw 2.502vw;
+        }
+    }
+}
+
+.menu__footer {
+    padding: 0.502vw 0.402vw;
+    display: flex;
+    gap: 0 0.521vw;
+    @include transition;
+
+    @include phones {
+        @include transition;
+        padding: 0.502vw 1.102vw;
+        gap: 0 0.821vw;
+    }
+
+    @include miniPhones {
+        @include transition;
+        padding: 0.502vw 1.502vw;
+        gap: 0 1.121vw;
+    }
+
+    @include pocketPhones {
+        @include transition;
+        padding: 1.002vw 2.502vw;
+        gap: 0 1.421vw;
+    }
+
+    .menu__footer__flag {
+        width: 1.042vw;
+        @include transition;
+
+        @include tablets {
+            @include transition;
+            width: 1.342vw;
+        }
+
+        @include phones {
+            @include transition;
+            width: 1.542vw;
+        }
+
+        @include miniPhones {
+            @include transition;
+            width: 2.042vw;
+        }
+
+        @include pocketPhones {
+            @include transition;
+            width: 2.842vw;
+        }
+    }
+
+    .menu__footer__text {
+        font-size: 0.833vw;
+        @include transition;
+
+        @include tablets {
+            @include transition;
+            font-size: 1.033vw;
+        }
+
+        @include phones {
+            @include transition;
+            font-size: 1.233vw;
+        }
+
+        @include miniPhones {
+            @include transition;
+            font-size: 1.633vw;
+        }
+
+        @include pocketPhones {
+            @include transition;
+            font-size: 2.533vw;
+        }
+    }
+}
+
+.menu__categories,
+.user__options__menu__p {
+    @include transition;
+
+    @include tablets {
+        @include transition;
+        font-size: 1.033vw;
+    }
+
+    @include phones {
+        @include transition;
+        font-size: 1.233vw;
+    }
+
+    @include miniPhones {
+        @include transition;
+        font-size: 1.733vw;
+    }
+
+    @include pocketPhones {
+        @include transition;
+        font-size: 3.033vw;
+    }
+}
+
