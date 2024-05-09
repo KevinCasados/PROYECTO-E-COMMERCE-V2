@@ -257,6 +257,32 @@ body img {
     width: 3.8vw;
   }
 }
+.user__home .cart__badge {
+  position: absolute;
+  top: -0.251vw;
+  right: -0.208vw;
+  background-color: #b8ee14;
+  color: #000000;
+  border-radius: 100%;
+  padding: 0.104vw 0.365vw;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 0.625vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 102.938rem) {
+  .user__home .cart__badge {
+    font-size: 0.73vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 71rem) {
+  .user__home .cart__badge {
+    transition: all ease 0.2s;
+    font-size: 0.76vw;
+    right: -0.308vw;
+  }
+}
 
 .user__img,
 .favorites__img {
@@ -1165,7 +1191,7 @@ body img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9px 2.125vw;
+    padding: 9px 5.325vw;
     background-color: #ffffff;
     width: 100%;
     z-index: 1000;
@@ -1187,6 +1213,33 @@ body img {
   }
   .header__2 .logo__adidas__2 {
     width: 7.125vw;
+    transition: all ease 0.2s;
+  }
+}
+.header__2 #cart__badge__2 {
+  position: absolute;
+  top: 2.703vw;
+  right: 3.469vw;
+  background-color: #b8ee14;
+  color: #000000;
+  border-radius: 100%;
+  padding: 0.104vw 0.613vw;
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 1.421vw;
+  transition: all ease 0.2s;
+}
+@media screen and (max-width: 40.813rem) {
+  .header__2 #cart__badge__2 {
+    right: 4.869vw;
+    font-size: 1.821vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 34.5rem) {
+  .header__2 #cart__badge__2 {
+    right: 4.669vw;
+    font-size: 2.321vw;
     transition: all ease 0.2s;
   }
 }
@@ -1235,6 +1288,12 @@ body img {
   }
   .header__2 .logo__adidas__2 {
     width: 8.425vw;
+    transition: all ease 0.2s;
+  }
+}
+@media screen and (max-width: 40.813rem) {
+  .header__2 {
+    padding: 9px 7.125vw;
     transition: all ease 0.2s;
   }
 }
@@ -1543,14 +1602,13 @@ body img {
   padding: 0.502vw 1.302vw 1.302vw 1.302vw;
   box-sizing: border-box;
   position: fixed;
-  right: 0%;
+  right: -100%;
   top: 6.431vw;
   box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, 0.3);
   transition: right 0.5s;
   display: flex;
   flex-direction: column;
   z-index: 100;
-  transition: all ease 0.2s;
 }
 @media screen and (max-width: 102.938rem) {
   .menu {

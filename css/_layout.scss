@@ -189,6 +189,33 @@
             width: 3.8vw;
         }
     }
+
+    .cart__badge {
+        position: absolute;
+        top: -0.251vw;
+        right: -0.208vw;
+        background-color: #b8ee14;
+        color: #000000;
+        border-radius: 100%;
+        padding: 0.104vw 0.365vw;
+        font-family: "Poppins", Verdana, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 0.625vw;    
+        @include transition;    
+
+        @include laptops {
+            font-size: 0.730vw;
+            @include transition;
+        }
+
+        @include tablets {
+            @include transition;
+            font-size: 0.760vw;
+            right: -0.308vw;
+        }
+
+        
+    }
 }
 // Estilos del Header - Ajustes de tamaño de los iconos
 .user__img, 
@@ -1051,7 +1078,7 @@
         position: fixed;
         @include flexAlingCenter;
         justify-content: space-between;
-        padding: 9px 2.125vw;
+        padding: 9px 5.325vw;
         background-color: #ffffff;
         width: 100%;
         z-index: 1000;
@@ -1077,7 +1104,33 @@
             width: 7.125vw;
             @include transition;
         }
-    } 
+    }
+    
+    #cart__badge__2 {
+        position: absolute;
+        top: 2.703vw;
+        right: 3.469vw;
+        background-color: #b8ee14;
+        color: #000000;
+        border-radius: 100%;
+        padding: 0.104vw 0.613vw;
+        font-family: "Poppins", Verdana, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 1.421vw;
+        @include transition;
+
+        @include miniPhones {
+            right: 4.869vw;
+            font-size: 1.821vw;
+            @include transition;
+        }
+
+        @include pocketPhones {
+            right: 4.669vw;
+            font-size: 2.321vw;
+            @include transition;
+        }
+    }
     
     @include miniPhones {
         @include transition;
@@ -1129,6 +1182,11 @@
             width: 8.425vw;
             @include transition;
         }
+    }
+
+    @include miniPhones {
+        padding: 9px 7.125vw;
+        @include transition;
     }
 }
 
@@ -1414,14 +1472,13 @@
     padding: 0.502vw 1.302vw 1.302vw 1.302vw;
     box-sizing: border-box;
     position: fixed;
-    right: 0%;
+    right: -100%;
     top: 6.431vw;
     box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, .30);
     transition: right 0.5s;
     display: flex;
     flex-direction: column;
     z-index: 100;
-    @include transition;
 
     @include laptops {
         top: 7.631vw;
