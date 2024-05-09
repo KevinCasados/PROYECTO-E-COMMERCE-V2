@@ -1,10 +1,26 @@
+// VARIABLES PARA TEXTO
 $fontFamily: "Poppins",Verdana,Tahoma, sans-serif;
 $fontSizeText: 0.833vw;
 $letterSpacing: 0.03rem;
 
+// VARIABLES DE COLORES
+$borderBottomColorLightGrey: #eceff1; 
+$mainColorWhite: #ffffff;
+$mainColorBlack: #000;
+$mainColorDarkGrey: #767677;
+$mainColorYellow: #fff229;
+$mainColorTransparent: #ffffff00;
+$mainColorFooterText: #d3d7da;
+
+
+//LISTA DE MIXINS
 @mixin flexAlingCenter {
     display: flex;
     align-items: center;
+}
+
+@mixin flexJustifyContentBetween {
+    justify-content: space-between;
 }
 
 @mixin aReset {
@@ -16,6 +32,14 @@ $letterSpacing: 0.03rem;
     box-sizing: border-box;
 }
 
+@mixin positionFixed {
+    position: fixed;
+}
+
+@mixin positionRelative {
+    position: relative;
+}
+
 @mixin marginAuto {
     margin: 0 auto;
 }
@@ -25,6 +49,8 @@ $letterSpacing: 0.03rem;
 }
 
 
+
+//BREACKPOINTS MIXINS PARA DISTINTAS RESOLUCIONES
 @mixin laptops {
     @media screen and (max-width: 102.938rem) {@content};
 }
