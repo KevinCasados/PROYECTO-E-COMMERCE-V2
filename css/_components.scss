@@ -28,12 +28,12 @@ body {
 
     .header {
         grid-area: header;
-        background-color: #ffffff;
+        background-color: $mainColorWhite;
     }
 
     .main {
         grid-area: main;
-        background-color: #ffffff;
+        background-color: $mainColorWhite;
         margin-top: 7.458vw;
         @include transition;
 
@@ -55,6 +55,6 @@ body {
 
     .footer {
         grid-area: footer;
-        background-color: #000000;
+        background-color: $mainColorBlack;
     }
 }

@@ -1,10 +1,10 @@
 // Estilos del header
 .header {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #eceff1;
+    @include flexJustifyContentBetween;
+    border-bottom: 2px solid $borderBottomColorLightGrey;
     padding: 20px 40px 20px 40px;
-    position: fixed;
+    @include positionFixed;
     width: 100%;
     z-index: 1000;
     transition: transform 0.3s ease-in-out; 
@@ -47,7 +47,7 @@
 // Estilos del Header - Categorias Centrales
 .product__categories {
     @include flexAlingCenter;
-    position: relative;
+    @include positionRelative;
     right: -7.396vw;
     @include transition;
 
@@ -71,8 +71,8 @@
         @include transition;
 
         &:hover {
-            color: #000;
-            border-bottom: 3px solid #000;
+            color: $mainColorBlack;
+            border-bottom: 3px solid $mainColorBlack;
             transition: all ease;
         }
 
@@ -107,9 +107,9 @@
 
     .input_search {
         border: none;
-        border: solid thin #eceff1;
+        border: solid thin $borderBottomColorLightGrey;
         padding: 0 35px 0 10px;
-        background-color: #eceff1;
+        background-color: $borderBottomColorLightGrey;
         height: 1.667vw;
         width: 11.979vw;
         max-width: 11.979vw;
@@ -164,7 +164,7 @@
     .user__home__icons {
         @include flexAlingCenter;
         justify-content: center;
-        position: relative;
+        @include positionRelative;
         width: 2.5vw;
         cursor: pointer;
         @include transition;
@@ -194,8 +194,8 @@
         position: absolute;
         top: -0.251vw;
         right: -0.208vw;
-        background-color: #b8ee14;
-        color: #000000;
+        background-color: $mainColorYellow;
+        color: $mainColorBlack;
         border-radius: 100%;
         padding: 0.104vw 0.365vw;
         font-family: "Poppins", Verdana, Tahoma, sans-serif;
@@ -256,7 +256,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    position: relative;
+    @include positionRelative;
     
 }
 // Estilos del Main - Actual page
@@ -272,7 +272,7 @@
 
     .actual__page__back__btn {
         @include flexAlingCenter;
-        background-color: #ffffff00;
+        background-color: $mainColorTransparent;
         padding: 0 10px 0 0;
         border: none;
         font-weight: 600;
@@ -283,8 +283,8 @@
         @include transition;
 
         &:hover {
-            color: #ffffff;
-            background-color: #000;
+            color: $mainColorWhite;
+            background-color: $mainColorBlack;
             text-decoration: none;
         }
 
@@ -340,16 +340,16 @@
     padding: 0 2px 0 5px;
 
     .actual__page__link {
-        background-color: #ffffff00;
+        background-color: $mainColorTransparent;
         border: none;
         font-weight: 400;
         letter-spacing: $letterSpacing; 
-        color: #000; 
+        color: $mainColorBlack; 
         @include transition;
 
         &:hover {
-            color: #ffffff;
-            background-color: #000;
+            color: $mainColorWhite;
+            background-color: $mainColorBlack;
         }
 
         @include laptops {
@@ -397,8 +397,8 @@
         text-decoration: none;
 
         &:hover {
-            color: #000; 
-            background-color: #ffffff00;
+            color: $mainColorBlack; 
+            background-color: $mainColorTransparent;
         }
     }
     
@@ -447,7 +447,7 @@
     }
 
     .page__title__dot__separator {
-        position: relative;
+        @include positionRelative;
         transform: translateY(22%);
         display: inline-flex;
         align-items: center;
@@ -473,7 +473,7 @@
     .page__title__count__container {
         transform: translateY(31%);
         padding-left: 10px;
-        color: #767677;
+        color: $mainColorDarkGrey;
         font-size: 0.667vw;
         @include transition;
 
@@ -497,7 +497,7 @@
 // Estilos del Main - Carrousel
 .carrousel {
     @include flexAlingCenter;
-    justify-content: space-between;
+    @include flexJustifyContentBetween;
     margin: 10px 2.125vw 25px 2.125vw;
     @include transition;
 
@@ -508,27 +508,27 @@
 
     .carrousel__slider {
         @include flexAlingCenter;
-        justify-content: space-between;
+        @include flexJustifyContentBetween;
     }
 
     .carrousel__item__wrapper {
         margin: 0 14px 0 0;
 
         &:hover {
-            color: #000;
-            border-bottom: 3px solid #000;
+            color: $mainColorBlack;
+            border-bottom: 3px solid $mainColorBlack;
         }
     }
 
     .nav__item {
         @include flexAlingCenter;
         font-size: 0.75vw;
-        color: #767677;
+        color: $mainColorDarkGrey;
         text-decoration: none;
         @include transition;
 
         &:hover {
-            color: #000;
+            color: $mainColorBlack;
         }
 
         @include laptops {
@@ -543,19 +543,19 @@
 
     .carrousel__filter__btn {
         @include flexAlingCenter;
-        border: solid 1px #000;
+        border: solid 1px $mainColorBlack;
         border-radius: 0;
         cursor: pointer;
         justify-content: flex-start;
         padding: 6px 9px;
-        position: relative;
+        @include positionRelative;
         text-align: left;
         width: auto;
-        background-color: #ffffff;
+        background-color: $mainColorWhite;
         @include transition;
 
         &:hover {
-            color: #797b7b;
+            color: $mainColorDarkGrey;
             transition: all ease 0s;
         } 
 
@@ -660,11 +660,11 @@
         margin-left: 0;
 
         &:hover {
-            border: 1px solid #000;
+            border: 1px solid $mainColorBlack;
         }
 
         .product__display {
-            position: relative;
+            @include positionRelative;
             
         }
 
@@ -684,7 +684,7 @@
         bottom: 22.6vw;
         cursor: pointer;
         border: none;
-        background-color: #ffffff00;
+        background-color: $mainColorTransparent;
         @include transition;
 
         @include laptops {
@@ -732,7 +732,7 @@
 }
 
 .products__price {
-    position: relative;
+    @include positionRelative;
     text-decoration: none;
     
     .products__price__container {
@@ -740,13 +740,13 @@
     }
     
     .products__price__text {
-        color: #000;
+        color: $mainColorBlack;
         font-size: 0.833vw;
-        position: relative;
+        @include positionRelative;
         right: -0.3vw;
         bottom: 1.8vw;
         cursor: pointer;
-        background-color: #ffffff;
+        background-color: $mainColorWhite;
         padding: 3px 5px;
         width: 3.333vw;
         @include transition;
@@ -818,15 +818,15 @@
     }
 
     .products__description__title {
-        color: #000;
+        color: $mainColorBlack;
     }
 
     .products__description__category {
-        color: #767677;
+        color: $mainColorDarkGrey;
     }
 
     .products__description__label {
-        color: #000;
+        color: $mainColorBlack;
         font-size: 0.667vw;
         @include transition;
 
@@ -865,7 +865,7 @@
 .pagination {
     padding: 10px 2.188vw 20px 2.188vw;
     display: flex;
-    justify-content: space-between;
+    @include flexJustifyContentBetween;
 
     @include miniPhones {
         padding: 10px 4.125vw 20px 4.125vw;
@@ -874,7 +874,7 @@
     
 .pagination__indicator {
     @include flexAlingCenter;
-    justify-content: space-between;
+    @include flexJustifyContentBetween;
     gap: 15px;
     font-size: 0.883vw;
     @include transition;
@@ -943,12 +943,12 @@
 .pagination__control__next {
     font-weight: 500;
     font-size: 0.833vw;
-    color: #000;
+    color: $mainColorBlack;
     letter-spacing: 0.12rem;
 
     &:hover {
-        color: #ffffff;
-        background-color: #000;
+        color: $mainColorWhite;
+        background-color: $mainColorBlack;
         text-decoration: none;
         transition: all ease 0.3s;
     }
@@ -982,8 +982,6 @@
 //Estilos del Footer
 
 .footer {
-    border-top: 1px solid #767677;
-    background-color: #282c31;
     padding: 15px 0;
     display: flex;
     flex-direction: column;
@@ -1002,17 +1000,17 @@
     .legal__menu__item {
         display: inline-block;
         width: auto;
-        border-right: 1px solid #d3d7da;
+        border-right: 1px solid $mainColorFooterText;
         margin: 15px 0;
         padding: 0 15px;
 
         .legal__menu__item__a {
             text-decoration: none;
-            color: #d3d7da;
+            color: $mainColorFooterText;
             font-size: 0.66rem;
 
             &:hover {
-                color: #ffffff;
+                color: $mainColorWhite;
             }
 
             @include transition;
@@ -1041,7 +1039,7 @@
     padding: 20px 15px 0px 15px;
 
     .colophon__text {
-        color: #d3d7da;
+        color: $mainColorFooterText;
         text-align: center;
         font-size: 0.66rem;
 
@@ -1074,12 +1072,12 @@
 
 
     @include phones {
-        border-bottom: 2px solid #eceff1;
-        position: fixed;
+        border-bottom: 2px solid $borderBottomColorLightGrey;
+        @include positionFixed;
         @include flexAlingCenter;
-        justify-content: space-between;
+        @include flexJustifyContentBetween;
         padding: 9px 5.325vw;
-        background-color: #ffffff;
+        background-color: $mainColorWhite;
         width: 100%;
         z-index: 1000;
         @include transition;
@@ -1110,8 +1108,8 @@
         position: absolute;
         top: 2.703vw;
         right: 3.469vw;
-        background-color: #b8ee14;
-        color: #000000;
+        background-color: $mainColorYellow;
+        color: $mainColorBlack;
         border-radius: 100%;
         padding: 0.104vw 0.613vw;
         font-family: "Poppins", Verdana, Tahoma, sans-serif;
@@ -1194,11 +1192,11 @@
 
 .cart {
     width: 26.042vw;
-    background-color: #ffffff;
+    background-color: $mainColorWhite;
     padding: 1.302vw;
     box-sizing: border-box;
     height: 33.495vw;
-    position: fixed;
+    @include positionFixed;
     right: -100%;
     top: 6.431vw;
     box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, .30);
@@ -1235,7 +1233,7 @@
 
     .cart__header {
         @include flexAlingCenter;
-        justify-content: space-between;
+        @include flexJustifyContentBetween;
         padding: 0.313vw; 
 
         .cart__exit {
@@ -1302,16 +1300,16 @@
 }
 
 .cart__shopping {
-    border-bottom: 0.156vw solid #eceff1;
+    border-bottom: 0.156vw solid $borderBottomColorLightGrey;
     display: flex;
-    justify-content: space-between;   
+    @include flexJustifyContentBetween;   
     box-sizing: border-box;
     align-items: center;
     padding: 0.781vw 0.104vw;
     gap: 1.281vw;
 
     @include pocketPhones {
-        border-bottom: 0.356vw solid #eceff1;
+        border-bottom: 0.356vw solid $borderBottomColorLightGrey;
         padding: 2.681vw 0.104vw;
         @include transition;
     }
@@ -1435,8 +1433,8 @@
         cursor: pointer;
         padding: 0.421vw;
         font-family: $fontFamily;
-        background-color: #000;
-        color: #ffffff;
+        background-color: $mainColorBlack;
+        color: $mainColorWhite;
         font-size: 0.733vw;
         letter-spacing: $letterSpacing;
         @include transition;
@@ -1468,10 +1466,10 @@
 
 .menu {
     width: 26.042vw;
-    background-color: #ffffff;
+    background-color: $mainColorWhite;
     padding: 0.502vw 1.302vw 1.302vw 1.302vw;
     box-sizing: border-box;
-    position: fixed;
+    @include positionFixed;
     right: -100%;
     top: 6.431vw;
     box-shadow: -19px 1px 22px -15px rgba(0, 0, 0, .30);
@@ -1507,13 +1505,14 @@
 
     .menu__header {
         @include flexAlingCenter;
-        justify-content: space-between;
-        border-bottom: 2PX solid #eceff1;
+        @include flexJustifyContentBetween;
+        border-bottom: 2PX solid $borderBottomColorLightGrey;
         padding: 0.521vw 0;
 
         .logo__adidas__menu {
             width: 2.2vw;
             margin: 0 10.145vw;
+            cursor: pointer;
             @include transition;
 
             @include tablets {
@@ -1543,6 +1542,7 @@
 
         .menu__exit {
             width: 0.894vw;
+            cursor: pointer;
             @include transition;
 
             @include tablets {
@@ -1570,12 +1570,13 @@
 
 .menu__categories__container {
     padding: 0.602vw 0.002vw;
-    border-bottom: 2px solid #eceff1;
+    border-bottom: 2px solid $borderBottomColorLightGrey;
+    cursor: pointer;
     @include transition;
 
     .menu__categories {
         @include flexAlingCenter;
-        justify-content: space-between;
+        @include flexJustifyContentBetween;
         padding-top: 1.150vw;
         @include transition;
 
@@ -1642,7 +1643,7 @@
 
 .user__options__menu {
     padding: 0.302vw 0.002vw 0 0.002vw;
-    border-bottom: 2px solid #eceff1;
+    border-bottom: 2px solid $borderBottomColorLightGrey;
 
     .user__options__menu__a {
         @include aReset;
@@ -1673,6 +1674,7 @@
     padding: 0.502vw 0.402vw;
     display: flex;
     gap: 0 0.521vw;
+    cursor: pointer;
     @include transition;
 
     @include phones {

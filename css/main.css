@@ -51,7 +51,7 @@ body img {
 }
 .body .footer {
   grid-area: footer;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .header {
@@ -261,8 +261,8 @@ body img {
   position: absolute;
   top: -0.251vw;
   right: -0.208vw;
-  background-color: #b8ee14;
-  color: #000000;
+  background-color: #fff229;
+  color: #000;
   border-radius: 100%;
   padding: 0.104vw 0.365vw;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
@@ -646,7 +646,7 @@ body img {
   transition: all ease 0.2s;
 }
 .carrousel .carrousel__filter__btn:hover {
-  color: #797b7b;
+  color: #767677;
   transition: all ease 0s;
 }
 @media screen and (max-width: 102.938rem) {
@@ -1098,8 +1098,6 @@ body img {
 }
 
 .footer {
-  border-top: 1px solid #767677;
-  background-color: #282c31;
   padding: 15px 0;
   display: flex;
   flex-direction: column;
@@ -1220,8 +1218,8 @@ body img {
   position: absolute;
   top: 2.703vw;
   right: 3.469vw;
-  background-color: #b8ee14;
-  color: #000000;
+  background-color: #fff229;
+  color: #000;
   border-radius: 100%;
   padding: 0.104vw 0.613vw;
   font-family: "Poppins", Verdana, Tahoma, sans-serif;
@@ -1650,6 +1648,7 @@ body img {
 .menu .menu__header .logo__adidas__menu {
   width: 2.2vw;
   margin: 0 10.145vw;
+  cursor: pointer;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 71rem) {
@@ -1682,6 +1681,7 @@ body img {
 }
 .menu .menu__header .menu__exit {
   width: 0.894vw;
+  cursor: pointer;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 71rem) {
@@ -1712,6 +1712,7 @@ body img {
 .menu__categories__container {
   padding: 0.602vw 0.002vw;
   border-bottom: 2px solid #eceff1;
+  cursor: pointer;
   transition: all ease 0.2s;
 }
 .menu__categories__container .menu__categories {
@@ -1823,6 +1824,7 @@ body img {
   padding: 0.502vw 0.402vw;
   display: flex;
   gap: 0 0.521vw;
+  cursor: pointer;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 57.5rem) {
