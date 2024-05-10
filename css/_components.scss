@@ -1,9 +1,11 @@
+// Reser del HTML
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+// Preset del body
 body {
     font-family: $fontFamily;
     font-size: $fontSizeText;
@@ -16,6 +18,7 @@ body {
     }
 }
 
+// Estilos generales del body con grid-template
 .body {
     display: grid;
     gap: 0;
@@ -26,6 +29,7 @@ body {
     100%
     ;
 
+    // Asignacion de los grid-area
     .header {
         grid-area: header;
         background-color: $mainColorWhite;
@@ -35,6 +39,10 @@ body {
         grid-area: main;
         background-color: $mainColorWhite;
         margin-top: 7.458vw;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        @include positionRelative;
         @include transition;
 
         @include tablets {
