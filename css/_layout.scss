@@ -1,6 +1,6 @@
 // Estilos del header
 .header {
-    display: flex;
+    @include flexAlingCenter;
     @include flexJustifyContentBetween;
     border-bottom: 2px solid $borderBottomColorLightGrey;
     padding: 20px 40px 20px 40px;
@@ -95,7 +95,7 @@
         display: none;
     }
 }
-// Estilos del Header - Menu del Usuario
+// Estilos del Header - Area del Usuario
 .user__home {
     @include flexAlingCenter;
 
@@ -190,6 +190,7 @@
         }
     }
 
+    // Estilos del cart bandage (conteo de procuctos en el carrito)
     .cart__badge {
         position: absolute;
         top: -0.251vw;
@@ -250,15 +251,6 @@
     }
 }
 
-
-// Estilos del Main 
-.main {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    @include positionRelative;
-    
-}
 // Estilos del Main - Actual page
 .actual__page {
     @include flexAlingCenter;
@@ -270,6 +262,7 @@
         @include transition;
     }
 
+    // Estilo del Main - boton izquierdo para regresar
     .actual__page__back__btn {
         @include flexAlingCenter;
         background-color: $mainColorTransparent;
@@ -335,6 +328,7 @@
     }
 }
 
+// Estilos del Main - Desgloce de paginas (parte izquierda)
 .actual__page__item {
     @include flexAlingCenter;  
     padding: 0 2px 0 5px;
@@ -520,6 +514,7 @@
         }
     }
 
+    // Estilos del Main - Carrousel - nav items
     .nav__item {
         @include flexAlingCenter;
         font-size: 0.75vw;
@@ -541,6 +536,7 @@
         }
     }
 
+    // Estilos del Main - Carrousel - Boton Filtrar y Ordenar
     .carrousel__filter__btn {
         @include flexAlingCenter;
         border: solid 1px $mainColorBlack;
@@ -674,6 +670,7 @@
     }
 }
 
+// Estilos del Main - Products - Agregar a favoritos (al carrito)
 .products__add__favorites__container {
     position: absolute;
     
@@ -731,6 +728,7 @@
     }
 }
 
+// Estilos del Main - Products - precios de los productos
 .products__price {
     @include positionRelative;
     text-decoration: none;
@@ -787,6 +785,8 @@
     }
 }
 
+
+// Estilos del Main - Products - Descripcion de los productos (pie de foto de los productos)
 .products__description__container {
     padding: 10px 10px 20px 10px;
     text-decoration: none;
@@ -817,6 +817,7 @@
         @include transition;
     }
 
+    // Estilos del Main - Products - Descripcion de los productos - Titulo
     .products__description__title {
         color: $mainColorBlack;
     }
@@ -825,6 +826,7 @@
         color: $mainColorDarkGrey;
     }
 
+    // Estilos del Main - Products - Descripcion de los productos - Estado del producto (Envio gratis / Nuevo)
     .products__description__label {
         color: $mainColorBlack;
         font-size: 0.667vw;
@@ -857,6 +859,7 @@
     }
 }
 
+// Estilos del Main - Products - Descripcion de los productos - Reset de los "<a> </a>"
 .products__description {
     text-decoration: none;
 }
@@ -871,7 +874,8 @@
         padding: 10px 4.125vw 20px 4.125vw;
     }
 }
-    
+
+// Estilos del Main - Pagination - Indicador de pagina actual    
 .pagination__indicator {
     @include flexAlingCenter;
     @include flexJustifyContentBetween;
@@ -904,6 +908,7 @@
         @include transition;
     }
 
+    // Estilos del Main - Pagination - simbolo de despliegue de paginas (a incorporar funcionalidad)
     .pagination__indicator__dropdown{
         @include flexAlingCenter;
         cursor: pointer;
@@ -940,6 +945,7 @@
     }
 }
 
+// Estilos del Main - Pagination - Boton de pagina siguiente
 .pagination__control__next {
     font-weight: 500;
     font-size: 0.833vw;
@@ -987,6 +993,7 @@
     flex-direction: column;
 }
 
+//Estilos del Footer - contenedor del contenido del footer
 .legal__menu {
     display: flex;
     flex-direction: row;
@@ -997,6 +1004,7 @@
     text-align: center;
     overflow: hidden;
 
+    //Estilos del Footer - contenido del footer
     .legal__menu__item {
         display: inline-block;
         width: auto;
@@ -1033,6 +1041,7 @@
     }
 }
 
+//Estilos del Footer - Colophon - Copyright de la pagina
 .colophon {
     max-width: 1010px;
     align-self: center;
@@ -1064,7 +1073,7 @@
 
 
 
-//Estilos de la seccion Header 2.0
+//Estilos de la seccion Header 2.0 - Header necesario para resoluciones pequeñas
 
 .header__2 {
     @include transition;
@@ -1082,6 +1091,7 @@
         z-index: 1000;
         @include transition;
 
+        //Estilos de la seccion Header 2.0 - contenedores de los iconos derecha e izquierda
         .header__2__left__icons,
         .header__2__right__icons {
             display: inline-flex;
@@ -1089,6 +1099,7 @@
             @include transition;
         }
 
+        //Estilos de la seccion Header 2.0 - Iconos de los contenedores izquierda y derecha
         .menu__img__2,
         .favorites__img__2,
         .user__img__2,
@@ -1103,7 +1114,8 @@
             @include transition;
         }
     }
-    
+
+    //Estilos de la seccion Header 2.0 - Contador de productos del carrito
     #cart__badge__2 {
         position: absolute;
         top: 2.703vw;
@@ -1231,6 +1243,7 @@
         top: 15.031vw;
     }
 
+    //Estilos de la seccion cart - Header
     .cart__header {
         @include flexAlingCenter;
         @include flexJustifyContentBetween;
@@ -1263,6 +1276,7 @@
         }
     }
 
+    //Estilos de la seccion cart - Titulo del cart
     .cart__title {
         width: 100%;
         text-align: center;
@@ -1294,11 +1308,13 @@
     }
 }
 
+//Estilos de la seccion cart - Contenedor de los productos totales en el carrito
 .cart__items {
     overflow-y: auto; /* Habilita el scroll vertical */
     flex-grow: 1; /* Hace que el contenedor de artículos tome el espacio restante */
 }
 
+//Estilos de la seccion cart - Contenedor de los productos en el carrito
 .cart__shopping {
     border-bottom: 0.156vw solid $borderBottomColorLightGrey;
     display: flex;
@@ -1314,6 +1330,7 @@
         @include transition;
     }
 
+    //Estilos de la seccion cart - imagen del producto
     .cart__img {
         width: 5.521vw;
         @include transition;
@@ -1339,7 +1356,8 @@
             @include transition;
         }
     }
-    
+
+    //Estilos de la seccion cart - descripcion del producto
     .cart__description {
         text-align: center;
         font-size: 0.663vw;
@@ -1367,7 +1385,8 @@
             @include transition;
         }
     }
-    
+
+    //Estilos de la seccion cart - precio del producto
     .cart__price {
         font-weight: 600;
         @include transition;
@@ -1392,7 +1411,8 @@
             @include transition;
         }
     }
-    
+
+    //Estilos de la seccion cart - eliminar el producto
     .cart__delete {
         width: 1.676vw;
         cursor: pointer;
@@ -1422,6 +1442,7 @@
 
 }
 
+//Estilos de la seccion cart - Boton de Proceder a la Compra / Comprar
 .proceed__purchase {
     @include flexAlingCenter;
     justify-content: center;
@@ -1503,12 +1524,14 @@
         top: 15.031vw;
     }
 
+    // Estilos del Menu - Header
     .menu__header {
         @include flexAlingCenter;
         @include flexJustifyContentBetween;
         border-bottom: 2PX solid $borderBottomColorLightGrey;
         padding: 0.521vw 0;
 
+        // Estilos del Menu - Logo del menu
         .logo__adidas__menu {
             width: 2.2vw;
             margin: 0 10.145vw;
@@ -1540,6 +1563,7 @@
             }
         }
 
+        // Estilos del Menu - Salir del menu
         .menu__exit {
             width: 0.894vw;
             cursor: pointer;
@@ -1568,6 +1592,7 @@
     }
 }
 
+// Estilos del Menu - Categorias de productos del menu
 .menu__categories__container {
     padding: 0.602vw 0.002vw;
     border-bottom: 2px solid $borderBottomColorLightGrey;
@@ -1641,6 +1666,7 @@
     }
 }
 
+// Estilos del Menu - Opciones de usuario del menu
 .user__options__menu {
     padding: 0.302vw 0.002vw 0 0.002vw;
     border-bottom: 2px solid $borderBottomColorLightGrey;
@@ -1670,6 +1696,7 @@
     }
 }
 
+// Estilos del Menu - Footer del menu
 .menu__footer {
     padding: 0.502vw 0.402vw;
     display: flex;
@@ -1695,6 +1722,7 @@
         gap: 0 1.421vw;
     }
 
+    // Estilos del Menu - Footer del menu - Bandera
     .menu__footer__flag {
         width: 1.042vw;
         @include transition;
@@ -1720,6 +1748,7 @@
         }
     }
 
+    // Estilos del Menu - Footer del menu - Texto (Pais)
     .menu__footer__text {
         font-size: 0.833vw;
         @include transition;
@@ -1746,6 +1775,7 @@
     }
 }
 
+// Estilos del Menu - Tamaños responsivos de textos del menu
 .menu__categories,
 .user__options__menu__p {
     @include transition;

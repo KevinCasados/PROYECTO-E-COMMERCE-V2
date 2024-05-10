@@ -29,6 +29,10 @@ body img {
   grid-area: main;
   background-color: #ffffff;
   margin-top: 7.458vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
   transition: all ease 0.2s;
 }
 @media screen and (max-width: 71rem) {
@@ -56,6 +60,7 @@ body img {
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #eceff1;
   padding: 20px 40px 20px 40px;
@@ -322,13 +327,6 @@ body img {
     width: 2.3vw;
     transition: all ease 0.2s;
   }
-}
-
-.main {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  position: relative;
 }
 
 .actual__page {
